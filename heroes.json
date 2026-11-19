@@ -1,0 +1,2047 @@
+{
+  "version": "1.0.0",
+  "totalHeroes": 72,
+  "rarityCounts": {
+    "common": 30,
+    "rare": 24,
+    "epic": 12,
+    "legendary": 4,
+    "mythic": 2
+  },
+  "heroes": [
+    {
+      "id": "blaster_fire",
+      "index": 0,
+      "archetypeId": "blaster",
+      "elementId": "fire",
+      "rarity": "common",
+      "starter": true,
+      "trophyRoadUnlock": null,
+      "nameRu": "Вулкан",
+      "subtitleRu": "Стрелок · Огонь",
+      "nameEn": "Vulcan",
+      "subtitleEn": "Blaster · Fire",
+      "palette": {
+        "primary": "#FF5722",
+        "secondary": "#FFB300",
+        "glow": "#FF8A50",
+        "dark": "#5D1908"
+      },
+      "silhouette": "visor_dual",
+      "signatureFX": "trail"
+    },
+    {
+      "id": "assassin_nature",
+      "index": 10,
+      "archetypeId": "assassin",
+      "elementId": "nature",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Рысь",
+      "subtitleRu": "Убийца · Природа",
+      "nameEn": "Lynx",
+      "subtitleEn": "Striker · Nature",
+      "palette": {
+        "primary": "#2ECC71",
+        "secondary": "#C8F7C5",
+        "glow": "#69F0AE",
+        "dark": "#0E4424"
+      },
+      "silhouette": "cyber_fox",
+      "signatureFX": "dashBlur"
+    },
+    {
+      "id": "assassin_shadow",
+      "index": 23,
+      "archetypeId": "assassin",
+      "elementId": "shadow",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Мираж",
+      "subtitleRu": "Убийца · Тьма",
+      "nameEn": "Mirage",
+      "subtitleEn": "Striker · Shadow",
+      "palette": {
+        "primary": "#9C27B0",
+        "secondary": "#FF4081",
+        "glow": "#EA80FC",
+        "dark": "#240935"
+      },
+      "silhouette": "cyber_fox",
+      "signatureFX": "dashBlur"
+    },
+    {
+      "id": "blaster_ice",
+      "index": 13,
+      "archetypeId": "blaster",
+      "elementId": "ice",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Иней",
+      "subtitleRu": "Стрелок · Лёд",
+      "nameEn": "Rime",
+      "subtitleEn": "Blaster · Ice",
+      "palette": {
+        "primary": "#00BCD4",
+        "secondary": "#E0F7FA",
+        "glow": "#4DD0E1",
+        "dark": "#083A4B"
+      },
+      "silhouette": "visor_dual",
+      "signatureFX": "trail"
+    },
+    {
+      "id": "blaster_storm",
+      "index": 26,
+      "archetypeId": "blaster",
+      "elementId": "storm",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Импульс",
+      "subtitleRu": "Стрелок · Гроза",
+      "nameEn": "Pulse",
+      "subtitleEn": "Blaster · Storm",
+      "palette": {
+        "primary": "#7C4DFF",
+        "secondary": "#FFEA00",
+        "glow": "#B388FF",
+        "dark": "#27125E"
+      },
+      "silhouette": "visor_dual",
+      "signatureFX": "trail"
+    },
+    {
+      "id": "controller_nature",
+      "index": 17,
+      "archetypeId": "controller",
+      "elementId": "nature",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Плющ",
+      "subtitleRu": "Контролёр · Природа",
+      "nameEn": "Ivy",
+      "subtitleEn": "Warden · Nature",
+      "palette": {
+        "primary": "#2ECC71",
+        "secondary": "#C8F7C5",
+        "glow": "#69F0AE",
+        "dark": "#0E4424"
+      },
+      "silhouette": "prism_mage",
+      "signatureFX": "stunRing"
+    },
+    {
+      "id": "controller_storm",
+      "index": 4,
+      "archetypeId": "controller",
+      "elementId": "storm",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Шторм",
+      "subtitleRu": "Контролёр · Гроза",
+      "nameEn": "Tempest",
+      "subtitleEn": "Warden · Storm",
+      "palette": {
+        "primary": "#7C4DFF",
+        "secondary": "#FFEA00",
+        "glow": "#B388FF",
+        "dark": "#27125E"
+      },
+      "silhouette": "prism_mage",
+      "signatureFX": "stunRing"
+    },
+    {
+      "id": "demolisher_fire",
+      "index": 6,
+      "archetypeId": "demolisher",
+      "elementId": "fire",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Фугас",
+      "subtitleRu": "Подрывник · Огонь",
+      "nameEn": "Salvo",
+      "subtitleEn": "Demolisher · Fire",
+      "palette": {
+        "primary": "#FF5722",
+        "secondary": "#FFB300",
+        "glow": "#FF8A50",
+        "dark": "#5D1908"
+      },
+      "silhouette": "bomb_grenadier",
+      "signatureFX": "crater"
+    },
+    {
+      "id": "demolisher_ice",
+      "index": 19,
+      "archetypeId": "demolisher",
+      "elementId": "ice",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Град",
+      "subtitleRu": "Подрывник · Лёд",
+      "nameEn": "Hail",
+      "subtitleEn": "Demolisher · Ice",
+      "palette": {
+        "primary": "#00BCD4",
+        "secondary": "#E0F7FA",
+        "glow": "#4DD0E1",
+        "dark": "#083A4B"
+      },
+      "silhouette": "bomb_grenadier",
+      "signatureFX": "crater"
+    },
+    {
+      "id": "fighter_ice",
+      "index": 5,
+      "archetypeId": "fighter",
+      "elementId": "ice",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": 200,
+      "nameRu": "Борей",
+      "subtitleRu": "Боец · Лёд",
+      "nameEn": "Boreas",
+      "subtitleEn": "Champion · Ice",
+      "palette": {
+        "primary": "#00BCD4",
+        "secondary": "#E0F7FA",
+        "glow": "#4DD0E1",
+        "dark": "#083A4B"
+      },
+      "silhouette": "martial_champ",
+      "signatureFX": "fistEcho"
+    },
+    {
+      "id": "fighter_storm",
+      "index": 18,
+      "archetypeId": "fighter",
+      "elementId": "storm",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": 500,
+      "nameRu": "Гром",
+      "subtitleRu": "Боец · Гроза",
+      "nameEn": "Thunder",
+      "subtitleEn": "Champion · Storm",
+      "palette": {
+        "primary": "#7C4DFF",
+        "secondary": "#FFEA00",
+        "glow": "#B388FF",
+        "dark": "#27125E"
+      },
+      "silhouette": "martial_champ",
+      "signatureFX": "fistEcho"
+    },
+    {
+      "id": "healer_fire",
+      "index": 28,
+      "archetypeId": "healer",
+      "elementId": "fire",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Феникс",
+      "subtitleRu": "Лекарь · Огонь",
+      "nameEn": "Phoenix",
+      "subtitleEn": "Medic · Fire",
+      "palette": {
+        "primary": "#FF5722",
+        "secondary": "#FFB300",
+        "glow": "#FF8A50",
+        "dark": "#5D1908"
+      },
+      "silhouette": "seraph_halo",
+      "signatureFX": "healRing"
+    },
+    {
+      "id": "healer_light",
+      "index": 22,
+      "archetypeId": "healer",
+      "elementId": "light",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Серафим",
+      "subtitleRu": "Лекарь · Свет",
+      "nameEn": "Seraph",
+      "subtitleEn": "Medic · Light",
+      "palette": {
+        "primary": "#FFD54F",
+        "secondary": "#FFFFFF",
+        "glow": "#FFF59D",
+        "dark": "#543E06"
+      },
+      "silhouette": "seraph_halo",
+      "signatureFX": "healRing"
+    },
+    {
+      "id": "healer_shadow",
+      "index": 9,
+      "archetypeId": "healer",
+      "elementId": "shadow",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Венера",
+      "subtitleRu": "Лекарь · Тьма",
+      "nameEn": "Vesper",
+      "subtitleEn": "Medic · Shadow",
+      "palette": {
+        "primary": "#9C27B0",
+        "secondary": "#FF4081",
+        "glow": "#EA80FC",
+        "dark": "#240935"
+      },
+      "silhouette": "seraph_halo",
+      "signatureFX": "healRing"
+    },
+    {
+      "id": "shotgun_fire",
+      "index": 7,
+      "archetypeId": "shotgun",
+      "elementId": "fire",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Рокот",
+      "subtitleRu": "Дробовик · Огонь",
+      "nameEn": "Rumble",
+      "subtitleEn": "Scattergun · Fire",
+      "palette": {
+        "primary": "#FF5722",
+        "secondary": "#FFB300",
+        "glow": "#FF8A50",
+        "dark": "#5D1908"
+      },
+      "silhouette": "broad_cannon",
+      "signatureFX": "pellet"
+    },
+    {
+      "id": "shotgun_ice",
+      "index": 20,
+      "archetypeId": "shotgun",
+      "elementId": "ice",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Айсберг",
+      "subtitleRu": "Дробовик · Лёд",
+      "nameEn": "Glacier",
+      "subtitleEn": "Scattergun · Ice",
+      "palette": {
+        "primary": "#00BCD4",
+        "secondary": "#E0F7FA",
+        "glow": "#4DD0E1",
+        "dark": "#083A4B"
+      },
+      "silhouette": "broad_cannon",
+      "signatureFX": "pellet"
+    },
+    {
+      "id": "shotgun_light",
+      "index": 1,
+      "archetypeId": "shotgun",
+      "elementId": "light",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Ореол",
+      "subtitleRu": "Дробовик · Свет",
+      "nameEn": "Halo",
+      "subtitleEn": "Scattergun · Light",
+      "palette": {
+        "primary": "#FFD54F",
+        "secondary": "#FFFFFF",
+        "glow": "#FFF59D",
+        "dark": "#543E06"
+      },
+      "silhouette": "broad_cannon",
+      "signatureFX": "pellet"
+    },
+    {
+      "id": "sniper_fire",
+      "index": 21,
+      "archetypeId": "sniper",
+      "elementId": "fire",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Комета",
+      "subtitleRu": "Снайпер · Огонь",
+      "nameEn": "Comet",
+      "subtitleEn": "Marksman · Fire",
+      "palette": {
+        "primary": "#FF5722",
+        "secondary": "#FFB300",
+        "glow": "#FF8A50",
+        "dark": "#5D1908"
+      },
+      "silhouette": "hawk_sniper",
+      "signatureFX": "laser"
+    },
+    {
+      "id": "sniper_light",
+      "index": 15,
+      "archetypeId": "sniper",
+      "elementId": "light",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Звезда",
+      "subtitleRu": "Снайпер · Свет",
+      "nameEn": "Polaris",
+      "subtitleEn": "Marksman · Light",
+      "palette": {
+        "primary": "#FFD54F",
+        "secondary": "#FFFFFF",
+        "glow": "#FFF59D",
+        "dark": "#543E06"
+      },
+      "silhouette": "hawk_sniper",
+      "signatureFX": "laser"
+    },
+    {
+      "id": "sniper_shadow",
+      "index": 2,
+      "archetypeId": "sniper",
+      "elementId": "shadow",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Затмение",
+      "subtitleRu": "Снайпер · Тьма",
+      "nameEn": "Eclipse",
+      "subtitleEn": "Marksman · Shadow",
+      "palette": {
+        "primary": "#9C27B0",
+        "secondary": "#FF4081",
+        "glow": "#EA80FC",
+        "dark": "#240935"
+      },
+      "silhouette": "hawk_sniper",
+      "signatureFX": "laser"
+    },
+    {
+      "id": "summoner_nature",
+      "index": 24,
+      "archetypeId": "summoner",
+      "elementId": "nature",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Улей",
+      "subtitleRu": "Призыватель · Природа",
+      "nameEn": "Hive",
+      "subtitleEn": "Engineer · Nature",
+      "palette": {
+        "primary": "#2ECC71",
+        "secondary": "#C8F7C5",
+        "glow": "#69F0AE",
+        "dark": "#0E4424"
+      },
+      "silhouette": "dome_inventor",
+      "signatureFX": "spawnPuff"
+    },
+    {
+      "id": "summoner_storm",
+      "index": 11,
+      "archetypeId": "summoner",
+      "elementId": "storm",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Тесла",
+      "subtitleRu": "Призыватель · Гроза",
+      "nameEn": "Tesla",
+      "subtitleEn": "Engineer · Storm",
+      "palette": {
+        "primary": "#7C4DFF",
+        "secondary": "#FFEA00",
+        "glow": "#B388FF",
+        "dark": "#27125E"
+      },
+      "silhouette": "dome_inventor",
+      "signatureFX": "spawnPuff"
+    },
+    {
+      "id": "tank_fire",
+      "index": 14,
+      "archetypeId": "tank",
+      "elementId": "fire",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Бастион",
+      "subtitleRu": "Танк · Огонь",
+      "nameEn": "Bastion",
+      "subtitleEn": "Vanguard · Fire",
+      "palette": {
+        "primary": "#FF5722",
+        "secondary": "#FFB300",
+        "glow": "#FF8A50",
+        "dark": "#5D1908"
+      },
+      "silhouette": "hulking_paladin",
+      "signatureFX": "shieldPop"
+    },
+    {
+      "id": "tank_ice",
+      "index": 27,
+      "archetypeId": "tank",
+      "elementId": "ice",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Мороз",
+      "subtitleRu": "Танк · Лёд",
+      "nameEn": "Frostguard",
+      "subtitleEn": "Vanguard · Ice",
+      "palette": {
+        "primary": "#00BCD4",
+        "secondary": "#E0F7FA",
+        "glow": "#4DD0E1",
+        "dark": "#083A4B"
+      },
+      "silhouette": "hulking_paladin",
+      "signatureFX": "shieldPop"
+    },
+    {
+      "id": "tank_light",
+      "index": 8,
+      "archetypeId": "tank",
+      "elementId": "light",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Паладин",
+      "subtitleRu": "Танк · Свет",
+      "nameEn": "Paladin",
+      "subtitleEn": "Vanguard · Light",
+      "palette": {
+        "primary": "#FFD54F",
+        "secondary": "#FFFFFF",
+        "glow": "#FFF59D",
+        "dark": "#543E06"
+      },
+      "silhouette": "hulking_paladin",
+      "signatureFX": "shieldPop"
+    },
+    {
+      "id": "thrower_light",
+      "index": 29,
+      "archetypeId": "thrower",
+      "elementId": "light",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Эликсир",
+      "subtitleRu": "Метатель · Свет",
+      "nameEn": "Elixir",
+      "subtitleEn": "Alchemist · Light",
+      "palette": {
+        "primary": "#FFD54F",
+        "secondary": "#FFFFFF",
+        "glow": "#FFF59D",
+        "dark": "#543E06"
+      },
+      "silhouette": "alchemist_pack",
+      "signatureFX": "bounce"
+    },
+    {
+      "id": "thrower_nature",
+      "index": 3,
+      "archetypeId": "thrower",
+      "elementId": "nature",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Нектар",
+      "subtitleRu": "Метатель · Природа",
+      "nameEn": "Nectar",
+      "subtitleEn": "Alchemist · Nature",
+      "palette": {
+        "primary": "#2ECC71",
+        "secondary": "#C8F7C5",
+        "glow": "#69F0AE",
+        "dark": "#0E4424"
+      },
+      "silhouette": "alchemist_pack",
+      "signatureFX": "bounce"
+    },
+    {
+      "id": "thrower_shadow",
+      "index": 16,
+      "archetypeId": "thrower",
+      "elementId": "shadow",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Алхимик",
+      "subtitleRu": "Метатель · Тьма",
+      "nameEn": "Umbra",
+      "subtitleEn": "Alchemist · Shadow",
+      "palette": {
+        "primary": "#9C27B0",
+        "secondary": "#FF4081",
+        "glow": "#EA80FC",
+        "dark": "#240935"
+      },
+      "silhouette": "alchemist_pack",
+      "signatureFX": "bounce"
+    },
+    {
+      "id": "trickster_ice",
+      "index": 12,
+      "archetypeId": "trickster",
+      "elementId": "ice",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Зеркало",
+      "subtitleRu": "Трикстер · Лёд",
+      "nameEn": "Mirror",
+      "subtitleEn": "Trickster · Ice",
+      "palette": {
+        "primary": "#00BCD4",
+        "secondary": "#E0F7FA",
+        "glow": "#4DD0E1",
+        "dark": "#083A4B"
+      },
+      "silhouette": "cosmic_jester",
+      "signatureFX": "mirror"
+    },
+    {
+      "id": "trickster_storm",
+      "index": 25,
+      "archetypeId": "trickster",
+      "elementId": "storm",
+      "rarity": "common",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Неон",
+      "subtitleRu": "Трикстер · Гроза",
+      "nameEn": "Neon",
+      "subtitleEn": "Trickster · Storm",
+      "palette": {
+        "primary": "#7C4DFF",
+        "secondary": "#FFEA00",
+        "glow": "#B388FF",
+        "dark": "#27125E"
+      },
+      "silhouette": "cosmic_jester",
+      "signatureFX": "mirror"
+    },
+    {
+      "id": "assassin_fire",
+      "index": 42,
+      "archetypeId": "assassin",
+      "elementId": "fire",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Искра",
+      "subtitleRu": "Убийца · Огонь",
+      "nameEn": "Cinder",
+      "subtitleEn": "Striker · Fire",
+      "palette": {
+        "primary": "#FF5722",
+        "secondary": "#FFB300",
+        "glow": "#FF8A50",
+        "dark": "#5D1908"
+      },
+      "silhouette": "cyber_fox",
+      "signatureFX": "dashBlur"
+    },
+    {
+      "id": "assassin_light",
+      "index": 36,
+      "archetypeId": "assassin",
+      "elementId": "light",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Блик",
+      "subtitleRu": "Убийца · Свет",
+      "nameEn": "Gleam",
+      "subtitleEn": "Striker · Light",
+      "palette": {
+        "primary": "#FFD54F",
+        "secondary": "#FFFFFF",
+        "glow": "#FFF59D",
+        "dark": "#543E06"
+      },
+      "silhouette": "cyber_fox",
+      "signatureFX": "dashBlur"
+    },
+    {
+      "id": "blaster_nature",
+      "index": 39,
+      "archetypeId": "blaster",
+      "elementId": "nature",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Росток",
+      "subtitleRu": "Стрелок · Природа",
+      "nameEn": "Sprout",
+      "subtitleEn": "Blaster · Nature",
+      "palette": {
+        "primary": "#2ECC71",
+        "secondary": "#C8F7C5",
+        "glow": "#69F0AE",
+        "dark": "#0E4424"
+      },
+      "silhouette": "visor_dual",
+      "signatureFX": "trail"
+    },
+    {
+      "id": "blaster_shadow",
+      "index": 52,
+      "archetypeId": "blaster",
+      "elementId": "shadow",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Фантом",
+      "subtitleRu": "Стрелок · Тьма",
+      "nameEn": "Specter",
+      "subtitleEn": "Blaster · Shadow",
+      "palette": {
+        "primary": "#9C27B0",
+        "secondary": "#FF4081",
+        "glow": "#EA80FC",
+        "dark": "#240935"
+      },
+      "silhouette": "visor_dual",
+      "signatureFX": "trail"
+    },
+    {
+      "id": "controller_fire",
+      "index": 49,
+      "archetypeId": "controller",
+      "elementId": "fire",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Магма",
+      "subtitleRu": "Контролёр · Огонь",
+      "nameEn": "Magma",
+      "subtitleEn": "Warden · Fire",
+      "palette": {
+        "primary": "#FF5722",
+        "secondary": "#FFB300",
+        "glow": "#FF8A50",
+        "dark": "#5D1908"
+      },
+      "silhouette": "prism_mage",
+      "signatureFX": "stunRing"
+    },
+    {
+      "id": "controller_light",
+      "index": 43,
+      "archetypeId": "controller",
+      "elementId": "light",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Призма",
+      "subtitleRu": "Контролёр · Свет",
+      "nameEn": "Prism",
+      "subtitleEn": "Warden · Light",
+      "palette": {
+        "primary": "#FFD54F",
+        "secondary": "#FFFFFF",
+        "glow": "#FFF59D",
+        "dark": "#543E06"
+      },
+      "silhouette": "prism_mage",
+      "signatureFX": "stunRing"
+    },
+    {
+      "id": "controller_shadow",
+      "index": 30,
+      "archetypeId": "controller",
+      "elementId": "shadow",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Обелиск",
+      "subtitleRu": "Контролёр · Тьма",
+      "nameEn": "Obelisk",
+      "subtitleEn": "Warden · Shadow",
+      "palette": {
+        "primary": "#9C27B0",
+        "secondary": "#FF4081",
+        "glow": "#EA80FC",
+        "dark": "#240935"
+      },
+      "silhouette": "prism_mage",
+      "signatureFX": "stunRing"
+    },
+    {
+      "id": "demolisher_nature",
+      "index": 45,
+      "archetypeId": "demolisher",
+      "elementId": "nature",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Кокос",
+      "subtitleRu": "Подрывник · Природа",
+      "nameEn": "Bramblebomb",
+      "subtitleEn": "Demolisher · Nature",
+      "palette": {
+        "primary": "#2ECC71",
+        "secondary": "#C8F7C5",
+        "glow": "#69F0AE",
+        "dark": "#0E4424"
+      },
+      "silhouette": "bomb_grenadier",
+      "signatureFX": "crater"
+    },
+    {
+      "id": "demolisher_storm",
+      "index": 32,
+      "archetypeId": "demolisher",
+      "elementId": "storm",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Рокот-М",
+      "subtitleRu": "Подрывник · Гроза",
+      "nameEn": "Boomer",
+      "subtitleEn": "Demolisher · Storm",
+      "palette": {
+        "primary": "#7C4DFF",
+        "secondary": "#FFEA00",
+        "glow": "#B388FF",
+        "dark": "#27125E"
+      },
+      "silhouette": "bomb_grenadier",
+      "signatureFX": "crater"
+    },
+    {
+      "id": "fighter_nature",
+      "index": 31,
+      "archetypeId": "fighter",
+      "elementId": "nature",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Атлант",
+      "subtitleRu": "Боец · Природа",
+      "nameEn": "Atlas",
+      "subtitleEn": "Champion · Nature",
+      "palette": {
+        "primary": "#2ECC71",
+        "secondary": "#C8F7C5",
+        "glow": "#69F0AE",
+        "dark": "#0E4424"
+      },
+      "silhouette": "martial_champ",
+      "signatureFX": "fistEcho"
+    },
+    {
+      "id": "fighter_shadow",
+      "index": 44,
+      "archetypeId": "fighter",
+      "elementId": "shadow",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Ноктюрн",
+      "subtitleRu": "Боец · Тьма",
+      "nameEn": "Nocturne",
+      "subtitleEn": "Champion · Shadow",
+      "palette": {
+        "primary": "#9C27B0",
+        "secondary": "#FF4081",
+        "glow": "#EA80FC",
+        "dark": "#240935"
+      },
+      "silhouette": "martial_champ",
+      "signatureFX": "fistEcho"
+    },
+    {
+      "id": "healer_ice",
+      "index": 41,
+      "archetypeId": "healer",
+      "elementId": "ice",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Роса",
+      "subtitleRu": "Лекарь · Лёд",
+      "nameEn": "Dewdrop",
+      "subtitleEn": "Medic · Ice",
+      "palette": {
+        "primary": "#00BCD4",
+        "secondary": "#E0F7FA",
+        "glow": "#4DD0E1",
+        "dark": "#083A4B"
+      },
+      "silhouette": "seraph_halo",
+      "signatureFX": "healRing"
+    },
+    {
+      "id": "shotgun_nature",
+      "index": 46,
+      "archetypeId": "shotgun",
+      "elementId": "nature",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Терновник",
+      "subtitleRu": "Дробовик · Природа",
+      "nameEn": "Bramble",
+      "subtitleEn": "Scattergun · Nature",
+      "palette": {
+        "primary": "#2ECC71",
+        "secondary": "#C8F7C5",
+        "glow": "#69F0AE",
+        "dark": "#0E4424"
+      },
+      "silhouette": "broad_cannon",
+      "signatureFX": "pellet"
+    },
+    {
+      "id": "shotgun_storm",
+      "index": 33,
+      "archetypeId": "shotgun",
+      "elementId": "storm",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Разряд",
+      "subtitleRu": "Дробовик · Гроза",
+      "nameEn": "Surge",
+      "subtitleEn": "Scattergun · Storm",
+      "palette": {
+        "primary": "#7C4DFF",
+        "secondary": "#FFEA00",
+        "glow": "#B388FF",
+        "dark": "#27125E"
+      },
+      "silhouette": "broad_cannon",
+      "signatureFX": "pellet"
+    },
+    {
+      "id": "sniper_ice",
+      "index": 34,
+      "archetypeId": "sniper",
+      "elementId": "ice",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Аврора",
+      "subtitleRu": "Снайпер · Лёд",
+      "nameEn": "Aurora",
+      "subtitleEn": "Marksman · Ice",
+      "palette": {
+        "primary": "#00BCD4",
+        "secondary": "#E0F7FA",
+        "glow": "#4DD0E1",
+        "dark": "#083A4B"
+      },
+      "silhouette": "hawk_sniper",
+      "signatureFX": "laser"
+    },
+    {
+      "id": "sniper_storm",
+      "index": 47,
+      "archetypeId": "sniper",
+      "elementId": "storm",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Зенит",
+      "subtitleRu": "Снайпер · Гроза",
+      "nameEn": "Zenith",
+      "subtitleEn": "Marksman · Storm",
+      "palette": {
+        "primary": "#7C4DFF",
+        "secondary": "#FFEA00",
+        "glow": "#B388FF",
+        "dark": "#27125E"
+      },
+      "silhouette": "hawk_sniper",
+      "signatureFX": "laser"
+    },
+    {
+      "id": "summoner_light",
+      "index": 50,
+      "archetypeId": "summoner",
+      "elementId": "light",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Маяк",
+      "subtitleRu": "Призыватель · Свет",
+      "nameEn": "Beacon",
+      "subtitleEn": "Engineer · Light",
+      "palette": {
+        "primary": "#FFD54F",
+        "secondary": "#FFFFFF",
+        "glow": "#FFF59D",
+        "dark": "#543E06"
+      },
+      "silhouette": "dome_inventor",
+      "signatureFX": "spawnPuff"
+    },
+    {
+      "id": "summoner_shadow",
+      "index": 37,
+      "archetypeId": "summoner",
+      "elementId": "shadow",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Спутник",
+      "subtitleRu": "Призыватель · Тьма",
+      "nameEn": "Sputnik",
+      "subtitleEn": "Engineer · Shadow",
+      "palette": {
+        "primary": "#9C27B0",
+        "secondary": "#FF4081",
+        "glow": "#EA80FC",
+        "dark": "#240935"
+      },
+      "silhouette": "dome_inventor",
+      "signatureFX": "spawnPuff"
+    },
+    {
+      "id": "tank_nature",
+      "index": 53,
+      "archetypeId": "tank",
+      "elementId": "nature",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Кедр",
+      "subtitleRu": "Танк · Природа",
+      "nameEn": "Cedar",
+      "subtitleEn": "Vanguard · Nature",
+      "palette": {
+        "primary": "#2ECC71",
+        "secondary": "#C8F7C5",
+        "glow": "#69F0AE",
+        "dark": "#0E4424"
+      },
+      "silhouette": "hulking_paladin",
+      "signatureFX": "shieldPop"
+    },
+    {
+      "id": "tank_storm",
+      "index": 40,
+      "archetypeId": "tank",
+      "elementId": "storm",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Титан",
+      "subtitleRu": "Танк · Гроза",
+      "nameEn": "Titan",
+      "subtitleEn": "Vanguard · Storm",
+      "palette": {
+        "primary": "#7C4DFF",
+        "secondary": "#FFEA00",
+        "glow": "#B388FF",
+        "dark": "#27125E"
+      },
+      "silhouette": "hulking_paladin",
+      "signatureFX": "shieldPop"
+    },
+    {
+      "id": "thrower_fire",
+      "index": 35,
+      "archetypeId": "thrower",
+      "elementId": "fire",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Пиромант",
+      "subtitleRu": "Метатель · Огонь",
+      "nameEn": "Pyroflask",
+      "subtitleEn": "Alchemist · Fire",
+      "palette": {
+        "primary": "#FF5722",
+        "secondary": "#FFB300",
+        "glow": "#FF8A50",
+        "dark": "#5D1908"
+      },
+      "silhouette": "alchemist_pack",
+      "signatureFX": "bounce"
+    },
+    {
+      "id": "thrower_ice",
+      "index": 48,
+      "archetypeId": "thrower",
+      "elementId": "ice",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Крионик",
+      "subtitleRu": "Метатель · Лёд",
+      "nameEn": "Cryonic",
+      "subtitleEn": "Alchemist · Ice",
+      "palette": {
+        "primary": "#00BCD4",
+        "secondary": "#E0F7FA",
+        "glow": "#4DD0E1",
+        "dark": "#083A4B"
+      },
+      "silhouette": "alchemist_pack",
+      "signatureFX": "bounce"
+    },
+    {
+      "id": "trickster_nature",
+      "index": 38,
+      "archetypeId": "trickster",
+      "elementId": "nature",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": 900,
+      "nameRu": "Лист",
+      "subtitleRu": "Трикстер · Природа",
+      "nameEn": "Clover",
+      "subtitleEn": "Trickster · Nature",
+      "palette": {
+        "primary": "#2ECC71",
+        "secondary": "#C8F7C5",
+        "glow": "#69F0AE",
+        "dark": "#0E4424"
+      },
+      "silhouette": "cosmic_jester",
+      "signatureFX": "mirror"
+    },
+    {
+      "id": "trickster_shadow",
+      "index": 51,
+      "archetypeId": "trickster",
+      "elementId": "shadow",
+      "rarity": "rare",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Арлекин",
+      "subtitleRu": "Трикстер · Тьма",
+      "nameEn": "Harlequin",
+      "subtitleEn": "Trickster · Shadow",
+      "palette": {
+        "primary": "#9C27B0",
+        "secondary": "#FF4081",
+        "glow": "#EA80FC",
+        "dark": "#240935"
+      },
+      "silhouette": "cosmic_jester",
+      "signatureFX": "mirror"
+    },
+    {
+      "id": "assassin_ice",
+      "index": 55,
+      "archetypeId": "assassin",
+      "elementId": "ice",
+      "rarity": "epic",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Осколок",
+      "subtitleRu": "Убийца · Лёд",
+      "nameEn": "Shard",
+      "subtitleEn": "Striker · Ice",
+      "palette": {
+        "primary": "#00BCD4",
+        "secondary": "#E0F7FA",
+        "glow": "#4DD0E1",
+        "dark": "#083A4B"
+      },
+      "silhouette": "cyber_fox",
+      "signatureFX": "dashBlur"
+    },
+    {
+      "id": "blaster_light",
+      "index": 65,
+      "archetypeId": "blaster",
+      "elementId": "light",
+      "rarity": "epic",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Луч",
+      "subtitleRu": "Стрелок · Свет",
+      "nameEn": "Ray",
+      "subtitleEn": "Blaster · Light",
+      "palette": {
+        "primary": "#FFD54F",
+        "secondary": "#FFFFFF",
+        "glow": "#FFF59D",
+        "dark": "#543E06"
+      },
+      "silhouette": "visor_dual",
+      "signatureFX": "trail"
+    },
+    {
+      "id": "controller_ice",
+      "index": 62,
+      "archetypeId": "controller",
+      "elementId": "ice",
+      "rarity": "epic",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Кристалл",
+      "subtitleRu": "Контролёр · Лёд",
+      "nameEn": "Crystal",
+      "subtitleEn": "Warden · Ice",
+      "palette": {
+        "primary": "#00BCD4",
+        "secondary": "#E0F7FA",
+        "glow": "#4DD0E1",
+        "dark": "#083A4B"
+      },
+      "silhouette": "prism_mage",
+      "signatureFX": "stunRing"
+    },
+    {
+      "id": "demolisher_shadow",
+      "index": 58,
+      "archetypeId": "demolisher",
+      "elementId": "shadow",
+      "rarity": "epic",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Метеор",
+      "subtitleRu": "Подрывник · Тьма",
+      "nameEn": "Meteor",
+      "subtitleEn": "Demolisher · Shadow",
+      "palette": {
+        "primary": "#9C27B0",
+        "secondary": "#FF4081",
+        "glow": "#EA80FC",
+        "dark": "#240935"
+      },
+      "silhouette": "bomb_grenadier",
+      "signatureFX": "crater"
+    },
+    {
+      "id": "fighter_fire",
+      "index": 63,
+      "archetypeId": "fighter",
+      "elementId": "fire",
+      "rarity": "epic",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Марс",
+      "subtitleRu": "Боец · Огонь",
+      "nameEn": "Mars",
+      "subtitleEn": "Champion · Fire",
+      "palette": {
+        "primary": "#FF5722",
+        "secondary": "#FFB300",
+        "glow": "#FF8A50",
+        "dark": "#5D1908"
+      },
+      "silhouette": "martial_champ",
+      "signatureFX": "fistEcho"
+    },
+    {
+      "id": "fighter_light",
+      "index": 57,
+      "archetypeId": "fighter",
+      "elementId": "light",
+      "rarity": "epic",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Гелиос",
+      "subtitleRu": "Боец · Свет",
+      "nameEn": "Helios",
+      "subtitleEn": "Champion · Light",
+      "palette": {
+        "primary": "#FFD54F",
+        "secondary": "#FFFFFF",
+        "glow": "#FFF59D",
+        "dark": "#543E06"
+      },
+      "silhouette": "martial_champ",
+      "signatureFX": "fistEcho"
+    },
+    {
+      "id": "healer_storm",
+      "index": 54,
+      "archetypeId": "healer",
+      "elementId": "storm",
+      "rarity": "epic",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Нимб",
+      "subtitleRu": "Лекарь · Гроза",
+      "nameEn": "Nimbus",
+      "subtitleEn": "Medic · Storm",
+      "palette": {
+        "primary": "#7C4DFF",
+        "secondary": "#FFEA00",
+        "glow": "#B388FF",
+        "dark": "#27125E"
+      },
+      "silhouette": "seraph_halo",
+      "signatureFX": "healRing"
+    },
+    {
+      "id": "shotgun_shadow",
+      "index": 59,
+      "archetypeId": "shotgun",
+      "elementId": "shadow",
+      "rarity": "epic",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Сумрак",
+      "subtitleRu": "Дробовик · Тьма",
+      "nameEn": "Dusk",
+      "subtitleEn": "Scattergun · Shadow",
+      "palette": {
+        "primary": "#9C27B0",
+        "secondary": "#FF4081",
+        "glow": "#EA80FC",
+        "dark": "#240935"
+      },
+      "silhouette": "broad_cannon",
+      "signatureFX": "pellet"
+    },
+    {
+      "id": "sniper_nature",
+      "index": 60,
+      "archetypeId": "sniper",
+      "elementId": "nature",
+      "rarity": "epic",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Сокол",
+      "subtitleRu": "Снайпер · Природа",
+      "nameEn": "Falcon",
+      "subtitleEn": "Marksman · Nature",
+      "palette": {
+        "primary": "#2ECC71",
+        "secondary": "#C8F7C5",
+        "glow": "#69F0AE",
+        "dark": "#0E4424"
+      },
+      "silhouette": "hawk_sniper",
+      "signatureFX": "laser"
+    },
+    {
+      "id": "summoner_fire",
+      "index": 56,
+      "archetypeId": "summoner",
+      "elementId": "fire",
+      "rarity": "epic",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Горн",
+      "subtitleRu": "Призыватель · Огонь",
+      "nameEn": "Forge",
+      "subtitleEn": "Engineer · Fire",
+      "palette": {
+        "primary": "#FF5722",
+        "secondary": "#FFB300",
+        "glow": "#FF8A50",
+        "dark": "#5D1908"
+      },
+      "silhouette": "dome_inventor",
+      "signatureFX": "spawnPuff"
+    },
+    {
+      "id": "thrower_storm",
+      "index": 61,
+      "archetypeId": "thrower",
+      "elementId": "storm",
+      "rarity": "epic",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Вольт",
+      "subtitleRu": "Метатель · Гроза",
+      "nameEn": "Volt",
+      "subtitleEn": "Alchemist · Storm",
+      "palette": {
+        "primary": "#7C4DFF",
+        "secondary": "#FFEA00",
+        "glow": "#B388FF",
+        "dark": "#27125E"
+      },
+      "silhouette": "alchemist_pack",
+      "signatureFX": "bounce"
+    },
+    {
+      "id": "trickster_light",
+      "index": 64,
+      "archetypeId": "trickster",
+      "elementId": "light",
+      "rarity": "epic",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Иллюзия",
+      "subtitleRu": "Трикстер · Свет",
+      "nameEn": "Lumen",
+      "subtitleEn": "Trickster · Light",
+      "palette": {
+        "primary": "#FFD54F",
+        "secondary": "#FFFFFF",
+        "glow": "#FFF59D",
+        "dark": "#543E06"
+      },
+      "silhouette": "cosmic_jester",
+      "signatureFX": "mirror"
+    },
+    {
+      "id": "assassin_storm",
+      "index": 68,
+      "archetypeId": "assassin",
+      "elementId": "storm",
+      "rarity": "legendary",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Молния",
+      "subtitleRu": "Убийца · Гроза",
+      "nameEn": "Blitz",
+      "subtitleEn": "Striker · Storm",
+      "palette": {
+        "primary": "#7C4DFF",
+        "secondary": "#FFEA00",
+        "glow": "#B388FF",
+        "dark": "#27125E"
+      },
+      "silhouette": "cyber_fox",
+      "signatureFX": "dashBlur"
+    },
+    {
+      "id": "healer_nature",
+      "index": 67,
+      "archetypeId": "healer",
+      "elementId": "nature",
+      "rarity": "legendary",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Лотос",
+      "subtitleRu": "Лекарь · Природа",
+      "nameEn": "Lotus",
+      "subtitleEn": "Medic · Nature",
+      "palette": {
+        "primary": "#2ECC71",
+        "secondary": "#C8F7C5",
+        "glow": "#69F0AE",
+        "dark": "#0E4424"
+      },
+      "silhouette": "seraph_halo",
+      "signatureFX": "healRing"
+    },
+    {
+      "id": "summoner_ice",
+      "index": 69,
+      "archetypeId": "summoner",
+      "elementId": "ice",
+      "rarity": "legendary",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Полюс",
+      "subtitleRu": "Призыватель · Лёд",
+      "nameEn": "Polar",
+      "subtitleEn": "Engineer · Ice",
+      "palette": {
+        "primary": "#00BCD4",
+        "secondary": "#E0F7FA",
+        "glow": "#4DD0E1",
+        "dark": "#083A4B"
+      },
+      "silhouette": "dome_inventor",
+      "signatureFX": "spawnPuff"
+    },
+    {
+      "id": "tank_shadow",
+      "index": 66,
+      "archetypeId": "tank",
+      "elementId": "shadow",
+      "rarity": "legendary",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Монолит",
+      "subtitleRu": "Танк · Тьма",
+      "nameEn": "Monolith",
+      "subtitleEn": "Vanguard · Shadow",
+      "palette": {
+        "primary": "#9C27B0",
+        "secondary": "#FF4081",
+        "glow": "#EA80FC",
+        "dark": "#240935"
+      },
+      "silhouette": "hulking_paladin",
+      "signatureFX": "shieldPop"
+    },
+    {
+      "id": "demolisher_light",
+      "index": 71,
+      "archetypeId": "demolisher",
+      "elementId": "light",
+      "rarity": "mythic",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Нова",
+      "subtitleRu": "Подрывник · Свет",
+      "nameEn": "Supernova",
+      "subtitleEn": "Demolisher · Light",
+      "palette": {
+        "primary": "#FFD54F",
+        "secondary": "#FFFFFF",
+        "glow": "#FFF59D",
+        "dark": "#543E06"
+      },
+      "silhouette": "bomb_grenadier",
+      "signatureFX": "crater"
+    },
+    {
+      "id": "trickster_fire",
+      "index": 70,
+      "archetypeId": "trickster",
+      "elementId": "fire",
+      "rarity": "mythic",
+      "starter": false,
+      "trophyRoadUnlock": null,
+      "nameRu": "Джокер",
+      "subtitleRu": "Трикстер · Огонь",
+      "nameEn": "Jester",
+      "subtitleEn": "Trickster · Fire",
+      "palette": {
+        "primary": "#FF5722",
+        "secondary": "#FFB300",
+        "glow": "#FF8A50",
+        "dark": "#5D1908"
+      },
+      "silhouette": "cosmic_jester",
+      "signatureFX": "mirror"
+    }
+  ],
+  "skins": [
+    {
+      "id": "skin_01_blaster",
+      "archetypeId": "blaster",
+      "rarity": "rare",
+      "nameRu": "Неоновый Стрелок 1",
+      "nameEn": "Neon Blaster Mk.1",
+      "colors": {
+        "body": "#1A237E",
+        "trim": "#00E5FF",
+        "aura": "#18FFFF"
+      },
+      "crestStyle": 1
+    },
+    {
+      "id": "skin_02_shotgun",
+      "archetypeId": "shotgun",
+      "rarity": "rare",
+      "nameRu": "Космо-Гвардия Дробовик 1",
+      "nameEn": "Star-Guard Scattergun Mk.1",
+      "colors": {
+        "body": "#283593",
+        "trim": "#FFD700",
+        "aura": "#FFF176"
+      },
+      "crestStyle": 2
+    },
+    {
+      "id": "skin_03_tank",
+      "archetypeId": "tank",
+      "rarity": "epic",
+      "nameRu": "Кибер-Самурай Танк 1",
+      "nameEn": "Cyber-Ronin Vanguard Mk.1",
+      "colors": {
+        "body": "#212121",
+        "trim": "#FF1744",
+        "aura": "#FF5252"
+      },
+      "crestStyle": 3
+    },
+    {
+      "id": "skin_04_sniper",
+      "archetypeId": "sniper",
+      "rarity": "rare",
+      "nameRu": "Изумрудный Снайпер 1",
+      "nameEn": "Emerald Marksman Mk.1",
+      "colors": {
+        "body": "#004D40",
+        "trim": "#69F0AE",
+        "aura": "#B9F6CA"
+      },
+      "crestStyle": 4
+    },
+    {
+      "id": "skin_05_healer",
+      "archetypeId": "healer",
+      "rarity": "common",
+      "nameRu": "Хромированный Лекарь 1",
+      "nameEn": "Chrome Medic Mk.1",
+      "colors": {
+        "body": "#455A64",
+        "trim": "#ECEFF1",
+        "aura": "#90CAF9"
+      },
+      "crestStyle": 1
+    },
+    {
+      "id": "skin_06_thrower",
+      "archetypeId": "thrower",
+      "rarity": "rare",
+      "nameRu": "Неоновый Метатель 1",
+      "nameEn": "Neon Alchemist Mk.1",
+      "colors": {
+        "body": "#1A237E",
+        "trim": "#00E5FF",
+        "aura": "#18FFFF"
+      },
+      "crestStyle": 2
+    },
+    {
+      "id": "skin_07_assassin",
+      "archetypeId": "assassin",
+      "rarity": "rare",
+      "nameRu": "Космо-Гвардия Убийца 1",
+      "nameEn": "Star-Guard Striker Mk.1",
+      "colors": {
+        "body": "#283593",
+        "trim": "#FFD700",
+        "aura": "#FFF176"
+      },
+      "crestStyle": 3
+    },
+    {
+      "id": "skin_08_controller",
+      "archetypeId": "controller",
+      "rarity": "epic",
+      "nameRu": "Кибер-Самурай Контролёр 1",
+      "nameEn": "Cyber-Ronin Warden Mk.1",
+      "colors": {
+        "body": "#212121",
+        "trim": "#FF1744",
+        "aura": "#FF5252"
+      },
+      "crestStyle": 4
+    },
+    {
+      "id": "skin_09_summoner",
+      "archetypeId": "summoner",
+      "rarity": "rare",
+      "nameRu": "Изумрудный Призыватель 1",
+      "nameEn": "Emerald Engineer Mk.1",
+      "colors": {
+        "body": "#004D40",
+        "trim": "#69F0AE",
+        "aura": "#B9F6CA"
+      },
+      "crestStyle": 1
+    },
+    {
+      "id": "skin_10_fighter",
+      "archetypeId": "fighter",
+      "rarity": "common",
+      "nameRu": "Хромированный Боец 1",
+      "nameEn": "Chrome Champion Mk.1",
+      "colors": {
+        "body": "#455A64",
+        "trim": "#ECEFF1",
+        "aura": "#90CAF9"
+      },
+      "crestStyle": 2
+    },
+    {
+      "id": "skin_11_trickster",
+      "archetypeId": "trickster",
+      "rarity": "rare",
+      "nameRu": "Неоновый Трикстер 1",
+      "nameEn": "Neon Trickster Mk.1",
+      "colors": {
+        "body": "#1A237E",
+        "trim": "#00E5FF",
+        "aura": "#18FFFF"
+      },
+      "crestStyle": 3
+    },
+    {
+      "id": "skin_12_demolisher",
+      "archetypeId": "demolisher",
+      "rarity": "rare",
+      "nameRu": "Космо-Гвардия Подрывник 1",
+      "nameEn": "Star-Guard Demolisher Mk.1",
+      "colors": {
+        "body": "#283593",
+        "trim": "#FFD700",
+        "aura": "#FFF176"
+      },
+      "crestStyle": 4
+    },
+    {
+      "id": "skin_13_blaster",
+      "archetypeId": "blaster",
+      "rarity": "epic",
+      "nameRu": "Кибер-Самурай Стрелок 2",
+      "nameEn": "Cyber-Ronin Blaster Mk.2",
+      "colors": {
+        "body": "#212121",
+        "trim": "#FF1744",
+        "aura": "#FF5252"
+      },
+      "crestStyle": 1
+    },
+    {
+      "id": "skin_14_shotgun",
+      "archetypeId": "shotgun",
+      "rarity": "rare",
+      "nameRu": "Изумрудный Дробовик 2",
+      "nameEn": "Emerald Scattergun Mk.2",
+      "colors": {
+        "body": "#004D40",
+        "trim": "#69F0AE",
+        "aura": "#B9F6CA"
+      },
+      "crestStyle": 2
+    },
+    {
+      "id": "skin_15_tank",
+      "archetypeId": "tank",
+      "rarity": "common",
+      "nameRu": "Хромированный Танк 2",
+      "nameEn": "Chrome Vanguard Mk.2",
+      "colors": {
+        "body": "#455A64",
+        "trim": "#ECEFF1",
+        "aura": "#90CAF9"
+      },
+      "crestStyle": 3
+    },
+    {
+      "id": "skin_16_sniper",
+      "archetypeId": "sniper",
+      "rarity": "rare",
+      "nameRu": "Неоновый Снайпер 2",
+      "nameEn": "Neon Marksman Mk.2",
+      "colors": {
+        "body": "#1A237E",
+        "trim": "#00E5FF",
+        "aura": "#18FFFF"
+      },
+      "crestStyle": 4
+    },
+    {
+      "id": "skin_17_healer",
+      "archetypeId": "healer",
+      "rarity": "rare",
+      "nameRu": "Космо-Гвардия Лекарь 2",
+      "nameEn": "Star-Guard Medic Mk.2",
+      "colors": {
+        "body": "#283593",
+        "trim": "#FFD700",
+        "aura": "#FFF176"
+      },
+      "crestStyle": 1
+    },
+    {
+      "id": "skin_18_thrower",
+      "archetypeId": "thrower",
+      "rarity": "epic",
+      "nameRu": "Кибер-Самурай Метатель 2",
+      "nameEn": "Cyber-Ronin Alchemist Mk.2",
+      "colors": {
+        "body": "#212121",
+        "trim": "#FF1744",
+        "aura": "#FF5252"
+      },
+      "crestStyle": 2
+    },
+    {
+      "id": "skin_19_assassin",
+      "archetypeId": "assassin",
+      "rarity": "rare",
+      "nameRu": "Изумрудный Убийца 2",
+      "nameEn": "Emerald Striker Mk.2",
+      "colors": {
+        "body": "#004D40",
+        "trim": "#69F0AE",
+        "aura": "#B9F6CA"
+      },
+      "crestStyle": 3
+    },
+    {
+      "id": "skin_20_controller",
+      "archetypeId": "controller",
+      "rarity": "common",
+      "nameRu": "Хромированный Контролёр 2",
+      "nameEn": "Chrome Warden Mk.2",
+      "colors": {
+        "body": "#455A64",
+        "trim": "#ECEFF1",
+        "aura": "#90CAF9"
+      },
+      "crestStyle": 4
+    },
+    {
+      "id": "skin_21_summoner",
+      "archetypeId": "summoner",
+      "rarity": "rare",
+      "nameRu": "Неоновый Призыватель 2",
+      "nameEn": "Neon Engineer Mk.2",
+      "colors": {
+        "body": "#1A237E",
+        "trim": "#00E5FF",
+        "aura": "#18FFFF"
+      },
+      "crestStyle": 1
+    },
+    {
+      "id": "skin_22_fighter",
+      "archetypeId": "fighter",
+      "rarity": "rare",
+      "nameRu": "Космо-Гвардия Боец 2",
+      "nameEn": "Star-Guard Champion Mk.2",
+      "colors": {
+        "body": "#283593",
+        "trim": "#FFD700",
+        "aura": "#FFF176"
+      },
+      "crestStyle": 2
+    },
+    {
+      "id": "skin_23_trickster",
+      "archetypeId": "trickster",
+      "rarity": "epic",
+      "nameRu": "Кибер-Самурай Трикстер 2",
+      "nameEn": "Cyber-Ronin Trickster Mk.2",
+      "colors": {
+        "body": "#212121",
+        "trim": "#FF1744",
+        "aura": "#FF5252"
+      },
+      "crestStyle": 3
+    },
+    {
+      "id": "skin_24_demolisher",
+      "archetypeId": "demolisher",
+      "rarity": "rare",
+      "nameRu": "Изумрудный Подрывник 2",
+      "nameEn": "Emerald Demolisher Mk.2",
+      "colors": {
+        "body": "#004D40",
+        "trim": "#69F0AE",
+        "aura": "#B9F6CA"
+      },
+      "crestStyle": 4
+    },
+    {
+      "id": "skin_25_blaster",
+      "archetypeId": "blaster",
+      "rarity": "common",
+      "nameRu": "Хромированный Стрелок 3",
+      "nameEn": "Chrome Blaster Mk.3",
+      "colors": {
+        "body": "#455A64",
+        "trim": "#ECEFF1",
+        "aura": "#90CAF9"
+      },
+      "crestStyle": 1
+    },
+    {
+      "id": "skin_26_shotgun",
+      "archetypeId": "shotgun",
+      "rarity": "rare",
+      "nameRu": "Неоновый Дробовик 3",
+      "nameEn": "Neon Scattergun Mk.3",
+      "colors": {
+        "body": "#1A237E",
+        "trim": "#00E5FF",
+        "aura": "#18FFFF"
+      },
+      "crestStyle": 2
+    },
+    {
+      "id": "skin_27_tank",
+      "archetypeId": "tank",
+      "rarity": "rare",
+      "nameRu": "Космо-Гвардия Танк 3",
+      "nameEn": "Star-Guard Vanguard Mk.3",
+      "colors": {
+        "body": "#283593",
+        "trim": "#FFD700",
+        "aura": "#FFF176"
+      },
+      "crestStyle": 3
+    },
+    {
+      "id": "skin_28_sniper",
+      "archetypeId": "sniper",
+      "rarity": "epic",
+      "nameRu": "Кибер-Самурай Снайпер 3",
+      "nameEn": "Cyber-Ronin Marksman Mk.3",
+      "colors": {
+        "body": "#212121",
+        "trim": "#FF1744",
+        "aura": "#FF5252"
+      },
+      "crestStyle": 4
+    },
+    {
+      "id": "skin_29_healer",
+      "archetypeId": "healer",
+      "rarity": "rare",
+      "nameRu": "Изумрудный Лекарь 3",
+      "nameEn": "Emerald Medic Mk.3",
+      "colors": {
+        "body": "#004D40",
+        "trim": "#69F0AE",
+        "aura": "#B9F6CA"
+      },
+      "crestStyle": 1
+    },
+    {
+      "id": "skin_30_thrower",
+      "archetypeId": "thrower",
+      "rarity": "common",
+      "nameRu": "Хромированный Метатель 3",
+      "nameEn": "Chrome Alchemist Mk.3",
+      "colors": {
+        "body": "#455A64",
+        "trim": "#ECEFF1",
+        "aura": "#90CAF9"
+      },
+      "crestStyle": 2
+    },
+    {
+      "id": "skin_31_assassin",
+      "archetypeId": "assassin",
+      "rarity": "rare",
+      "nameRu": "Неоновый Убийца 3",
+      "nameEn": "Neon Striker Mk.3",
+      "colors": {
+        "body": "#1A237E",
+        "trim": "#00E5FF",
+        "aura": "#18FFFF"
+      },
+      "crestStyle": 3
+    },
+    {
+      "id": "skin_32_controller",
+      "archetypeId": "controller",
+      "rarity": "rare",
+      "nameRu": "Космо-Гвардия Контролёр 3",
+      "nameEn": "Star-Guard Warden Mk.3",
+      "colors": {
+        "body": "#283593",
+        "trim": "#FFD700",
+        "aura": "#FFF176"
+      },
+      "crestStyle": 4
+    },
+    {
+      "id": "skin_33_summoner",
+      "archetypeId": "summoner",
+      "rarity": "epic",
+      "nameRu": "Кибер-Самурай Призыватель 3",
+      "nameEn": "Cyber-Ronin Engineer Mk.3",
+      "colors": {
+        "body": "#212121",
+        "trim": "#FF1744",
+        "aura": "#FF5252"
+      },
+      "crestStyle": 1
+    },
+    {
+      "id": "skin_34_fighter",
+      "archetypeId": "fighter",
+      "rarity": "rare",
+      "nameRu": "Изумрудный Боец 3",
+      "nameEn": "Emerald Champion Mk.3",
+      "colors": {
+        "body": "#004D40",
+        "trim": "#69F0AE",
+        "aura": "#B9F6CA"
+      },
+      "crestStyle": 2
+    },
+    {
+      "id": "skin_35_trickster",
+      "archetypeId": "trickster",
+      "rarity": "mythic",
+      "nameRu": "Галактический Трикстер 3",
+      "nameEn": "Galactic Trickster Mk.3",
+      "colors": {
+        "body": "#311B92",
+        "trim": "#E040FB",
+        "aura": "#EA80FC"
+      },
+      "crestStyle": 3
+    },
+    {
+      "id": "skin_36_demolisher",
+      "archetypeId": "demolisher",
+      "rarity": "mythic",
+      "nameRu": "Галактический Подрывник 3",
+      "nameEn": "Galactic Demolisher Mk.3",
+      "colors": {
+        "body": "#311B92",
+        "trim": "#E040FB",
+        "aura": "#EA80FC"
+      },
+      "crestStyle": 4
+    },
+    {
+      "id": "skin_37_blaster",
+      "archetypeId": "blaster",
+      "rarity": "mythic",
+      "nameRu": "Галактический Стрелок 4",
+      "nameEn": "Galactic Blaster Mk.4",
+      "colors": {
+        "body": "#311B92",
+        "trim": "#E040FB",
+        "aura": "#EA80FC"
+      },
+      "crestStyle": 1
+    },
+    {
+      "id": "skin_38_shotgun",
+      "archetypeId": "shotgun",
+      "rarity": "mythic",
+      "nameRu": "Галактический Дробовик 4",
+      "nameEn": "Galactic Scattergun Mk.4",
+      "colors": {
+        "body": "#311B92",
+        "trim": "#E040FB",
+        "aura": "#EA80FC"
+      },
+      "crestStyle": 2
+    },
+    {
+      "id": "skin_39_tank",
+      "archetypeId": "tank",
+      "rarity": "mythic",
+      "nameRu": "Галактический Танк 4",
+      "nameEn": "Galactic Vanguard Mk.4",
+      "colors": {
+        "body": "#311B92",
+        "trim": "#E040FB",
+        "aura": "#EA80FC"
+      },
+      "crestStyle": 3
+    },
+    {
+      "id": "skin_40_sniper",
+      "archetypeId": "sniper",
+      "rarity": "mythic",
+      "nameRu": "Галактический Снайпер 4",
+      "nameEn": "Galactic Marksman Mk.4",
+      "colors": {
+        "body": "#311B92",
+        "trim": "#E040FB",
+        "aura": "#EA80FC"
+      },
+      "crestStyle": 4
+    }
+  ]
+}

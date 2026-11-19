@@ -1,0 +1,876 @@
+{
+  "version": "1.0.0",
+  "season": {
+    "id": "s1_cosmic_vortex",
+    "durationWeeks": 8,
+    "nameRu": "Сезон 1: Звёздный Вихрь",
+    "nameEn": "Season 1: Star Vortex",
+    "tiers": [
+      {
+        "tier": 1,
+        "tokensRequired": 40,
+        "reward": {
+          "type": "coins",
+          "amount": 73,
+          "labelRu": "73 Монет",
+          "labelEn": "73 Coins"
+        }
+      },
+      {
+        "tier": 2,
+        "tokensRequired": 80,
+        "reward": {
+          "type": "power_points",
+          "amount": 36,
+          "labelRu": "36 Очков силы",
+          "labelEn": "36 Power Points"
+        }
+      },
+      {
+        "tier": 3,
+        "tokensRequired": 120,
+        "reward": {
+          "type": "coins",
+          "amount": 89,
+          "labelRu": "89 Монет",
+          "labelEn": "89 Coins"
+        }
+      },
+      {
+        "tier": 4,
+        "tokensRequired": 160,
+        "reward": {
+          "type": "power_points",
+          "amount": 42,
+          "labelRu": "42 Очков силы",
+          "labelEn": "42 Power Points"
+        }
+      },
+      {
+        "tier": 5,
+        "tokensRequired": 200,
+        "reward": {
+          "type": "case",
+          "count": 1,
+          "labelRu": "Звёздный Кейс",
+          "labelEn": "Star Case"
+        }
+      },
+      {
+        "tier": 6,
+        "tokensRequired": 240,
+        "reward": {
+          "type": "power_points",
+          "amount": 48,
+          "labelRu": "48 Очков силы",
+          "labelEn": "48 Power Points"
+        }
+      },
+      {
+        "tier": 7,
+        "tokensRequired": 280,
+        "reward": {
+          "type": "coins",
+          "amount": 121,
+          "labelRu": "121 Монет",
+          "labelEn": "121 Coins"
+        }
+      },
+      {
+        "tier": 8,
+        "tokensRequired": 320,
+        "reward": {
+          "type": "power_points",
+          "amount": 54,
+          "labelRu": "54 Очков силы",
+          "labelEn": "54 Power Points"
+        }
+      },
+      {
+        "tier": 9,
+        "tokensRequired": 360,
+        "reward": {
+          "type": "coins",
+          "amount": 137,
+          "labelRu": "137 Монет",
+          "labelEn": "137 Coins"
+        }
+      },
+      {
+        "tier": 10,
+        "tokensRequired": 400,
+        "reward": {
+          "type": "case",
+          "count": 1,
+          "labelRu": "Звёздный Кейс",
+          "labelEn": "Star Case"
+        }
+      },
+      {
+        "tier": 11,
+        "tokensRequired": 440,
+        "reward": {
+          "type": "coins",
+          "amount": 153,
+          "labelRu": "153 Монет",
+          "labelEn": "153 Coins"
+        }
+      },
+      {
+        "tier": 12,
+        "tokensRequired": 480,
+        "reward": {
+          "type": "power_points",
+          "amount": 66,
+          "labelRu": "66 Очков силы",
+          "labelEn": "66 Power Points"
+        }
+      },
+      {
+        "tier": 13,
+        "tokensRequired": 520,
+        "reward": {
+          "type": "coins",
+          "amount": 169,
+          "labelRu": "169 Монет",
+          "labelEn": "169 Coins"
+        }
+      },
+      {
+        "tier": 14,
+        "tokensRequired": 560,
+        "reward": {
+          "type": "power_points",
+          "amount": 72,
+          "labelRu": "72 Очков силы",
+          "labelEn": "72 Power Points"
+        }
+      },
+      {
+        "tier": 15,
+        "tokensRequired": 600,
+        "reward": {
+          "type": "case",
+          "count": 1,
+          "labelRu": "Звёздный Кейс",
+          "labelEn": "Star Case"
+        }
+      },
+      {
+        "tier": 16,
+        "tokensRequired": 640,
+        "reward": {
+          "type": "power_points",
+          "amount": 78,
+          "labelRu": "78 Очков силы",
+          "labelEn": "78 Power Points"
+        }
+      },
+      {
+        "tier": 17,
+        "tokensRequired": 680,
+        "reward": {
+          "type": "coins",
+          "amount": 201,
+          "labelRu": "201 Монет",
+          "labelEn": "201 Coins"
+        }
+      },
+      {
+        "tier": 18,
+        "tokensRequired": 720,
+        "reward": {
+          "type": "power_points",
+          "amount": 84,
+          "labelRu": "84 Очков силы",
+          "labelEn": "84 Power Points"
+        }
+      },
+      {
+        "tier": 19,
+        "tokensRequired": 760,
+        "reward": {
+          "type": "coins",
+          "amount": 217,
+          "labelRu": "217 Монет",
+          "labelEn": "217 Coins"
+        }
+      },
+      {
+        "tier": 20,
+        "tokensRequired": 800,
+        "reward": {
+          "type": "case",
+          "count": 1,
+          "labelRu": "Звёздный Кейс",
+          "labelEn": "Star Case"
+        }
+      },
+      {
+        "tier": 21,
+        "tokensRequired": 840,
+        "reward": {
+          "type": "coins",
+          "amount": 233,
+          "labelRu": "233 Монет",
+          "labelEn": "233 Coins"
+        }
+      },
+      {
+        "tier": 22,
+        "tokensRequired": 880,
+        "reward": {
+          "type": "power_points",
+          "amount": 96,
+          "labelRu": "96 Очков силы",
+          "labelEn": "96 Power Points"
+        }
+      },
+      {
+        "tier": 23,
+        "tokensRequired": 920,
+        "reward": {
+          "type": "coins",
+          "amount": 249,
+          "labelRu": "249 Монет",
+          "labelEn": "249 Coins"
+        }
+      },
+      {
+        "tier": 24,
+        "tokensRequired": 960,
+        "reward": {
+          "type": "power_points",
+          "amount": 102,
+          "labelRu": "102 Очков силы",
+          "labelEn": "102 Power Points"
+        }
+      },
+      {
+        "tier": 25,
+        "tokensRequired": 1000,
+        "reward": {
+          "type": "case",
+          "count": 1,
+          "labelRu": "Звёздный Кейс",
+          "labelEn": "Star Case"
+        }
+      },
+      {
+        "tier": 26,
+        "tokensRequired": 1040,
+        "reward": {
+          "type": "power_points",
+          "amount": 108,
+          "labelRu": "108 Очков силы",
+          "labelEn": "108 Power Points"
+        }
+      },
+      {
+        "tier": 27,
+        "tokensRequired": 1080,
+        "reward": {
+          "type": "coins",
+          "amount": 281,
+          "labelRu": "281 Монет",
+          "labelEn": "281 Coins"
+        }
+      },
+      {
+        "tier": 28,
+        "tokensRequired": 1120,
+        "reward": {
+          "type": "skin",
+          "skinId": "skin_03_tank",
+          "labelRu": "Скин: Кибер-Самурай Танк 1",
+          "labelEn": "Skin: Cyber-Ronin Vanguard Mk.1"
+        }
+      },
+      {
+        "tier": 29,
+        "tokensRequired": 1160,
+        "reward": {
+          "type": "coins",
+          "amount": 297,
+          "labelRu": "297 Монет",
+          "labelEn": "297 Coins"
+        }
+      },
+      {
+        "tier": 30,
+        "tokensRequired": 1200,
+        "reward": {
+          "type": "case",
+          "count": 1,
+          "labelRu": "Звёздный Кейс",
+          "labelEn": "Star Case"
+        }
+      }
+    ]
+  },
+  "trophyRoad": [
+    {
+      "trophies": 50,
+      "reward": {
+        "type": "coins",
+        "amount": 92,
+        "labelRu": "92 Монет",
+        "labelEn": "92 Coins"
+      }
+    },
+    {
+      "trophies": 100,
+      "reward": {
+        "type": "power_points",
+        "amount": 50,
+        "labelRu": "50 Очков силы",
+        "labelEn": "50 Power Points"
+      }
+    },
+    {
+      "trophies": 150,
+      "reward": {
+        "type": "case",
+        "count": 1,
+        "labelRu": "Звёздный Кейс",
+        "labelEn": "Star Case"
+      }
+    },
+    {
+      "trophies": 200,
+      "reward": {
+        "type": "hero",
+        "heroId": "fighter_ice",
+        "labelRu": "Герой: Борей",
+        "labelEn": "Hero: Boreas"
+      }
+    },
+    {
+      "trophies": 250,
+      "reward": {
+        "type": "coins",
+        "amount": 140,
+        "labelRu": "140 Монет",
+        "labelEn": "140 Coins"
+      }
+    },
+    {
+      "trophies": 300,
+      "reward": {
+        "type": "case",
+        "count": 1,
+        "labelRu": "Звёздный Кейс",
+        "labelEn": "Star Case"
+      }
+    },
+    {
+      "trophies": 350,
+      "reward": {
+        "type": "coins",
+        "amount": 164,
+        "labelRu": "164 Монет",
+        "labelEn": "164 Coins"
+      }
+    },
+    {
+      "trophies": 400,
+      "reward": {
+        "type": "power_points",
+        "amount": 80,
+        "labelRu": "80 Очков силы",
+        "labelEn": "80 Power Points"
+      }
+    },
+    {
+      "trophies": 450,
+      "reward": {
+        "type": "case",
+        "count": 1,
+        "labelRu": "Звёздный Кейс",
+        "labelEn": "Star Case"
+      }
+    },
+    {
+      "trophies": 500,
+      "reward": {
+        "type": "hero",
+        "heroId": "fighter_storm",
+        "labelRu": "Герой: Гром",
+        "labelEn": "Hero: Thunder"
+      }
+    },
+    {
+      "trophies": 550,
+      "reward": {
+        "type": "coins",
+        "amount": 212,
+        "labelRu": "212 Монет",
+        "labelEn": "212 Coins"
+      }
+    },
+    {
+      "trophies": 600,
+      "reward": {
+        "type": "case",
+        "count": 1,
+        "labelRu": "Звёздный Кейс",
+        "labelEn": "Star Case"
+      }
+    },
+    {
+      "trophies": 650,
+      "reward": {
+        "type": "coins",
+        "amount": 236,
+        "labelRu": "236 Монет",
+        "labelEn": "236 Coins"
+      }
+    },
+    {
+      "trophies": 700,
+      "reward": {
+        "type": "power_points",
+        "amount": 110,
+        "labelRu": "110 Очков силы",
+        "labelEn": "110 Power Points"
+      }
+    },
+    {
+      "trophies": 750,
+      "reward": {
+        "type": "case",
+        "count": 1,
+        "labelRu": "Звёздный Кейс",
+        "labelEn": "Star Case"
+      }
+    },
+    {
+      "trophies": 800,
+      "reward": {
+        "type": "power_points",
+        "amount": 120,
+        "labelRu": "120 Очков силы",
+        "labelEn": "120 Power Points"
+      }
+    },
+    {
+      "trophies": 850,
+      "reward": {
+        "type": "coins",
+        "amount": 284,
+        "labelRu": "284 Монет",
+        "labelEn": "284 Coins"
+      }
+    },
+    {
+      "trophies": 900,
+      "reward": {
+        "type": "hero",
+        "heroId": "trickster_nature",
+        "labelRu": "Герой: Лист",
+        "labelEn": "Hero: Clover"
+      }
+    },
+    {
+      "trophies": 950,
+      "reward": {
+        "type": "coins",
+        "amount": 308,
+        "labelRu": "308 Монет",
+        "labelEn": "308 Coins"
+      }
+    },
+    {
+      "trophies": 1000,
+      "reward": {
+        "type": "power_points",
+        "amount": 140,
+        "labelRu": "140 Очков силы",
+        "labelEn": "140 Power Points"
+      }
+    },
+    {
+      "trophies": 1050,
+      "reward": {
+        "type": "case",
+        "count": 1,
+        "labelRu": "Звёздный Кейс",
+        "labelEn": "Star Case"
+      }
+    },
+    {
+      "trophies": 1100,
+      "reward": {
+        "type": "power_points",
+        "amount": 150,
+        "labelRu": "150 Очков силы",
+        "labelEn": "150 Power Points"
+      }
+    },
+    {
+      "trophies": 1150,
+      "reward": {
+        "type": "coins",
+        "amount": 356,
+        "labelRu": "356 Монет",
+        "labelEn": "356 Coins"
+      }
+    },
+    {
+      "trophies": 1200,
+      "reward": {
+        "type": "case",
+        "count": 1,
+        "labelRu": "Звёздный Кейс",
+        "labelEn": "Star Case"
+      }
+    },
+    {
+      "trophies": 1250,
+      "reward": {
+        "type": "coins",
+        "amount": 380,
+        "labelRu": "380 Монет",
+        "labelEn": "380 Coins"
+      }
+    },
+    {
+      "trophies": 1300,
+      "reward": {
+        "type": "power_points",
+        "amount": 170,
+        "labelRu": "170 Очков силы",
+        "labelEn": "170 Power Points"
+      }
+    },
+    {
+      "trophies": 1350,
+      "reward": {
+        "type": "case",
+        "count": 1,
+        "labelRu": "Звёздный Кейс",
+        "labelEn": "Star Case"
+      }
+    },
+    {
+      "trophies": 1400,
+      "reward": {
+        "type": "power_points",
+        "amount": 180,
+        "labelRu": "180 Очков силы",
+        "labelEn": "180 Power Points"
+      }
+    },
+    {
+      "trophies": 1450,
+      "reward": {
+        "type": "coins",
+        "amount": 428,
+        "labelRu": "428 Монет",
+        "labelEn": "428 Coins"
+      }
+    },
+    {
+      "trophies": 1500,
+      "reward": {
+        "type": "case",
+        "count": 1,
+        "labelRu": "Звёздный Кейс",
+        "labelEn": "Star Case"
+      }
+    }
+  ],
+  "achievements": [
+    {
+      "id": "ach_first_win",
+      "target": 1,
+      "metric": "wins",
+      "nameRu": "Первая Звезда",
+      "nameEn": "First Star",
+      "descRu": "Победи в 1 матче",
+      "descEn": "Win 1 match",
+      "reward": {
+        "type": "coins",
+        "amount": 100
+      }
+    },
+    {
+      "id": "ach_wins_10",
+      "target": 10,
+      "metric": "wins",
+      "nameRu": "Ударный Отряд",
+      "nameEn": "Strike Squad",
+      "descRu": "Одержи 10 побед",
+      "descEn": "Win 10 matches",
+      "reward": {
+        "type": "case",
+        "count": 1
+      }
+    },
+    {
+      "id": "ach_wins_50",
+      "target": 50,
+      "metric": "wins",
+      "nameRu": "Капитан Галактики",
+      "nameEn": "Galaxy Captain",
+      "descRu": "Одержи 50 побед",
+      "descEn": "Win 50 matches",
+      "reward": {
+        "type": "case",
+        "count": 1
+      }
+    },
+    {
+      "id": "ach_takedowns_25",
+      "target": 25,
+      "metric": "takedowns",
+      "nameRu": "Звездопад",
+      "nameEn": "Starfall",
+      "descRu": "Соверши 25 нокаутов",
+      "descEn": "Score 25 takedowns",
+      "reward": {
+        "type": "power_points",
+        "amount": 60
+      }
+    },
+    {
+      "id": "ach_takedowns_100",
+      "target": 100,
+      "metric": "takedowns",
+      "nameRu": "Сверхновая",
+      "nameEn": "Supernova",
+      "descRu": "Соверши 100 нокаутов",
+      "descEn": "Score 100 takedowns",
+      "reward": {
+        "type": "case",
+        "count": 1
+      }
+    },
+    {
+      "id": "ach_crystals_30",
+      "target": 30,
+      "metric": "crystalsGrabbed",
+      "nameRu": "Искатель Кристаллов",
+      "nameEn": "Crystal Seeker",
+      "descRu": "Подбери 30 кристаллов в матчах",
+      "descEn": "Collect 30 crystals in matches",
+      "reward": {
+        "type": "coins",
+        "amount": 150
+      }
+    },
+    {
+      "id": "ach_supers_15",
+      "target": 15,
+      "metric": "supersUsed",
+      "nameRu": "Полный Заряд",
+      "nameEn": "Full Charge",
+      "descRu": "Примени СУПЕР 15 раз",
+      "descEn": "Unleash SUPER 15 times",
+      "reward": {
+        "type": "power_points",
+        "amount": 50
+      }
+    },
+    {
+      "id": "ach_heroes_5",
+      "target": 5,
+      "metric": "heroesUnlocked",
+      "nameRu": "Сбор Отряда",
+      "nameEn": "Squad Assembly",
+      "descRu": "Открой 5 героев",
+      "descEn": "Unlock 5 heroes",
+      "reward": {
+        "type": "coins",
+        "amount": 180
+      }
+    },
+    {
+      "id": "ach_heroes_15",
+      "target": 15,
+      "metric": "heroesUnlocked",
+      "nameRu": "Коллекционер",
+      "nameEn": "Star Collector",
+      "descRu": "Открой 15 героев",
+      "descEn": "Unlock 15 heroes",
+      "reward": {
+        "type": "case",
+        "count": 1
+      }
+    },
+    {
+      "id": "ach_upgrade_lv7",
+      "target": 7,
+      "metric": "maxHeroLevel",
+      "nameRu": "Пробуждение Таланта",
+      "nameEn": "Talent Awakened",
+      "descRu": "Прокачай героя до 7 уровня",
+      "descEn": "Upgrade a hero to Level 7",
+      "reward": {
+        "type": "coins",
+        "amount": 250
+      }
+    },
+    {
+      "id": "ach_upgrade_lv9",
+      "target": 9,
+      "metric": "maxHeroLevel",
+      "nameRu": "Пик Мощи",
+      "nameEn": "Peak Power",
+      "descRu": "Прокачай героя до 9 уровня",
+      "descEn": "Upgrade a hero to Level 9",
+      "reward": {
+        "type": "case",
+        "count": 1
+      }
+    },
+    {
+      "id": "ach_hardcore_win",
+      "target": 1,
+      "metric": "hardcoreWins",
+      "nameRu": "Испытание Огнём",
+      "nameEn": "Trial by Starfire",
+      "descRu": "Победи с модификатором Хардкор",
+      "descEn": "Win a match with Hardcore modifier",
+      "reward": {
+        "type": "case",
+        "count": 1
+      }
+    },
+    {
+      "id": "ach_ghost_ally",
+      "target": 1,
+      "metric": "ghostMatches",
+      "nameRu": "Плечом к Плечу",
+      "nameEn": "Side by Side",
+      "descRu": "Сыграй матч с Призраком друга",
+      "descEn": "Play a match with a Friend Ghost ally",
+      "reward": {
+        "type": "coins",
+        "amount": 150
+      }
+    },
+    {
+      "id": "ach_trophies_500",
+      "target": 500,
+      "metric": "totalTrophies",
+      "nameRu": "Восходящая Легенда",
+      "nameEn": "Rising Legend",
+      "descRu": "Набери 500 кубков",
+      "descEn": "Reach 500 total trophies",
+      "reward": {
+        "type": "case",
+        "count": 1
+      }
+    },
+    {
+      "id": "ach_boss_win",
+      "target": 1,
+      "metric": "bossesDefeated",
+      "nameRu": "Гроза Титана",
+      "nameEn": "Titan Slayer",
+      "descRu": "Победи Мега-Титана в режиме Осады",
+      "descEn": "Defeat the Mega-Titan in Titan Siege",
+      "reward": {
+        "type": "case",
+        "count": 1
+      }
+    },
+    {
+      "id": "ach_overdrive_10",
+      "target": 10,
+      "metric": "overdrivesUsed",
+      "nameRu": "Гиперпульс",
+      "nameEn": "Overdrive Master",
+      "descRu": "Активируй Овердрайв 10 раз",
+      "descEn": "Activate Overdrive 10 times",
+      "reward": {
+        "type": "power_points",
+        "amount": 75
+      }
+    }
+  ],
+  "dailyQuestTemplates": [
+    {
+      "id": "dq_matches_3",
+      "metric": "matches",
+      "target": 3,
+      "nameRu": "Сыграй 3 матча на арене",
+      "nameEn": "Play 3 arena matches",
+      "rewardCoins": 90,
+      "seasonTokens": 30
+    },
+    {
+      "id": "dq_wins_2",
+      "metric": "wins",
+      "target": 2,
+      "nameRu": "Одержи 2 победы в любом режиме",
+      "nameEn": "Win 2 matches in any mode",
+      "rewardCoins": 110,
+      "seasonTokens": 35
+    },
+    {
+      "id": "dq_takedowns_6",
+      "metric": "takedowns",
+      "target": 6,
+      "nameRu": "Выбей 6 соперников",
+      "nameEn": "Score 6 takedowns",
+      "rewardPowerPoints": 35,
+      "seasonTokens": 30
+    },
+    {
+      "id": "dq_supers_3",
+      "metric": "supersUsed",
+      "target": 3,
+      "nameRu": "Используй СУПЕР 3 раза",
+      "nameEn": "Activate SUPER 3 times",
+      "rewardCoins": 85,
+      "seasonTokens": 25
+    },
+    {
+      "id": "dq_crystals_8",
+      "metric": "crystalsGrabbed",
+      "target": 8,
+      "nameRu": "Подбери 8 кристаллов в Гонке",
+      "nameEn": "Grab 8 crystals in Crystal Rush",
+      "rewardPowerPoints": 30,
+      "seasonTokens": 30
+    }
+  ],
+  "dailyChainBonus": {
+    "type": "case",
+    "count": 1
+  },
+  "presetFriendGhosts": [
+    {
+      "code": "GHOST-MAX-770",
+      "nameRu": "Макс_Космос",
+      "nameEn": "Max_Cosmos",
+      "trophies": 770,
+      "heroId": "assassin_storm",
+      "skinId": "skin_07_assassin",
+      "level": 6,
+      "personality": "aggressor"
+    },
+    {
+      "code": "GHOST-ALISA-540",
+      "nameRu": "Алиса_Нова",
+      "nameEn": "Alisa_Nova",
+      "trophies": 540,
+      "heroId": "healer_light",
+      "skinId": "skin_05_healer",
+      "level": 5,
+      "personality": "cautious"
+    },
+    {
+      "code": "GHOST-ARTEM-920",
+      "nameRu": "Артём_Титан",
+      "nameEn": "Artem_Titan",
+      "trophies": 920,
+      "heroId": "tank_fire",
+      "skinId": "skin_03_tank",
+      "level": 7,
+      "personality": "greedy"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>Звёздная Арена: Отряд</title>
+  <link rel="stylesheet" href="./styles/main.css?v=20261118b" />
+  <link rel="stylesheet" href="./styles/polish.css?v=20261118b" />
+</head>
+<body>
+  <!-- Match Canvases: 3D Three.js + Prepared 2.5D Sprite Fallback -->
+  <canvas id="saArenaCanvas3D" class="sa-arena-canvas"></canvas>
+  <canvas id="saArenaCanvas2D" class="sa-arena-canvas hidden"></canvas>
+  <div id="saWorldOverlay" class="sa-world-overlay"></div>
+
+  <!-- Meta / Lobby UI -->
+  <div id="saLobbyRoot" class="sa-lobby-root">
+    <header id="saTopBar" class="sa-topbar"></header>
+    <nav id="saNavBar" class="sa-navbar"></nav>
+    <main id="saViewContent" class="sa-view-content"></main>
+  </div>
+
+  <!-- Active Match HUD & Dual-Thumb Controls -->
+  <div id="saMatchHud" class="sa-match-hud hidden">
+    <div class="sa-hud-top">
+      <div class="sa-hud-scoreboard">
+        <span id="saHudScore">0 : 0</span>
+        <span id="saHudTimer" class="sa-hud-timer">1:30</span>
+      </div>
+      <div class="sa-hud-top-right">
+        <button id="saPracticeChargeBtn" class="sa-btn sa-btn-gold sa-btn-sm hidden">⚡ Супер</button>
+        <button id="saSkipTutorialBtn" class="sa-btn sa-btn-secondary sa-btn-sm hidden">Пропустить ✕</button>
+        <button id="saPinBtn" class="sa-chip-btn sa-pin-toggle" type="button" aria-label="Emote">★</button>
+        <button id="saHudPauseBtn" class="sa-chip-btn">❚❚</button>
+      </div>
+    </div>
+    <div id="saHudObjective" class="sa-hud-objective hidden" aria-live="polite">
+      <span class="sa-hud-objective-mark" aria-hidden="true">✦</span>
+      <span id="saHudObjectiveText"></span>
+    </div>
+
+    <!-- Mega-Titan Boss HP Bar (Boss Siege Mode) -->
+    <div id="saBossHudBar" class="sa-boss-hud hidden">
+      <div class="sa-boss-hud-head">
+        <span id="saBossHudName">МЕГА-ТИТАН</span>
+        <span id="saBossHudPhase" class="sa-boss-phase-pill">ФАЗА 1</span>
+      </div>
+      <div class="sa-boss-hp-track">
+        <div id="saBossHpFill" class="sa-boss-hp-fill" style="width:100%"></div>
+        <span id="saBossHpText" class="sa-boss-hp-text">26000 / 26000</span>
+      </div>
+    </div>
+
+    <!-- Live Kill Feed -->
+    <div id="saKillFeed" class="sa-kill-feed"></div>
+
+    <!-- Emote Pin Picker Tray -->
+    <div id="saPinTray" class="sa-pin-tray hidden"></div>
+
+    <div id="saHudBanner" class="sa-hud-banner hidden"></div>
+
+    <!-- Left Screen Half: Virtual Movement Joystick -->
+    <div id="saLeftJoyZone" class="sa-left-joy-zone">
+      <div id="saStickBase" class="sa-stick-base">
+        <div id="saStickKnob" class="sa-stick-knob"></div>
+      </div>
+    </div>
+
+    <!-- Right Screen Half: Auto-Aim/Drag Fire + Super + Active Gadget + Overdrive -->
+    <div class="sa-right-action-cluster">
+      <button id="saOverdriveBtn" class="sa-overdrive-btn" type="button" aria-label="Overdrive">
+        <span class="sa-od-ico">⚡</span>
+        <small id="saOverdrivePct">0%</small>
+        <span class="sa-key-hint">Q</span>
+      </button>
+      <button id="saGadgetBtn" class="sa-gadget-btn" type="button" aria-label="Gadget">
+        <span class="sa-gadget-ico">⚡</span>
+        <small id="saGadgetCharges">3</small>
+        <span class="sa-key-hint">F</span>
+      </button>
+      <button id="saSuperBtn" class="sa-super-btn" type="button">★<small>0%</small><span class="sa-key-hint">E / ПКМ</span></button>
+      <button id="saFireBtn" class="sa-fire-btn" type="button" aria-label="Fire">
+        <svg viewBox="0 0 24 24" width="40" height="40"><circle cx="12" cy="12" r="7.5" fill="none" stroke="#FFF" stroke-width="2.8"/><circle cx="12" cy="12" r="3.2" fill="#FFEA00"/><path d="M12 1.5v4M12 18.5v4M1.5 12h4M18.5 12h4" stroke="#FFF" stroke-width="2.8" stroke-linecap="round"/></svg>
+        <span class="sa-key-hint">SPACE / ЛКМ</span>
+      </button>
+    </div>
+    <div class="sa-control-mode-toggle" id="saControlToggle"><button class="sa-chip-btn active" data-ctrl="auto">АВТО</button><button class="sa-chip-btn" data-ctrl="large">БОЛЬШИЕ</button><button class="sa-chip-btn" data-ctrl="desktop">ПК</button></div>
+  </div>
+
+  <!-- Pre-Match 3 VS 3 Clash Intro Screen -->
+  <div id="saVsOverlay" class="sa-vs-overlay hidden"></div>
+
+  <!-- Post-Match Results Modal -->
+  <div id="saResultsOverlay" class="sa-results-overlay hidden"></div>
+
+  <!-- Match Pause Modal -->
+  <div id="saPauseOverlay" class="sa-results-overlay hidden"></div>
+
+  <!-- Session Preloader (shown once per session via sessionStorage) -->
+  <div id="saPreloader" class="sa-preloader">
+    <div class="sa-case-card">
+      <div class="sa-demo-ad-star">★</div>
+      <h2 id="saPreloaderTitle" style="margin:4px 0;">Звёздная Арена: Отряд</h2>
+      <p id="saPreloaderText" class="sa-muted">Зарядка Звёздного Ядра...</p>
+    </div>
+  </div>
+
+  <!-- Polite WebGL-Unsupported Fallback Screen (Rule 0.5 & 10) -->
+  <div id="saUnsupportedScreen" class="sa-unsupported hidden"></div>
+
+  <!-- Toast Notifications -->
+  <div id="saToastContainer" class="sa-toast-container"></div>
+
+  <!-- Built-in Zero-CDN VK Bridge iframe shim (activates automatically when hosted inside VK Games) -->
+  <script>
+    (function () {
+      if (window.vkBridge) return;
+      var hasVkQuery = /[?&]vk_app_id=/.test(window.location.search);
+      if (!hasVkQuery) return;
+      var subscribers = [];
+      var reqId = 0;
+      var pending = {};
+      window.addEventListener('message', function (ev) {
+        var d = ev && ev.data;
+        if (!d || typeof d !== 'object') return;
+        for (var i = 0; i < subscribers.length; i++) {
+          try { subscribers[i]({ detail: d }); } catch (_) {}
+        }
+        var rid = d.data && d.data.request_id;
+        if (rid && pending[rid]) {
+          var cb = pending[rid];
+          delete pending[rid];
+          if (d.type && d.type.indexOf('Failed') !== -1) cb.reject(d.data);
+          else cb.resolve(d.data || { result: true });
+        }
+      });
+      window.vkBridge = {
+        subscribe: function (fn) { subscribers.push(fn); },
+        send: function (handler, params) {
+          return new Promise(function (resolve, reject) {
+            var id = 'sa_' + (++reqId);
+            var p = Object.assign({}, params || {}, { request_id: id });
+            pending[id] = { resolve: resolve, reject: reject };
+            setTimeout(function () {
+              if (pending[id]) {
+                delete pending[id];
+                resolve({ result: false, timeout: true });
+              }
+            }, 2500);
+            try {
+              if (window.AndroidBridge && window.AndroidBridge[handler]) {
+                window.AndroidBridge[handler](JSON.stringify(p));
+              } else if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers[handler]) {
+                window.webkit.messageHandlers[handler].postMessage(p);
+              } else if (window.parent && window.parent !== window) {
+                window.parent.postMessage({ handler: handler, params: p, type: 'vk-connect', webFrameId: '' }, '*');
+              } else {
+                delete pending[id];
+                resolve({ result: true });
+              }
+            } catch (e) {
+              delete pending[id];
+              reject(e);
+            }
+          });
+        }
+      };
+    })();
+  </script>
+
+  <!-- Local Vendor Three.js (r160, ~166KB gz) -->
+  <script src="./vendor/three.min.js"></script>
+
+  <!-- Modular Game Systems -->
+  <script src="./src/i18n.js?v=20261118b"></script>
+  <script src="./src/platform.js"></script>
+  <script src="./src/save.js"></script>
+  <script src="./src/audio.js"></script>
+  <script src="./src/sim/rng.js"></script>
+  <script src="./src/sim/physics.js"></script>
+  <script src="./src/sim/bot_ai.js"></script>
+  <script src="./src/sim/match_sim.js"></script>
+  <script src="./src/render/atlas.js"></script>
+  <script src="./src/render/meshes.js"></script>
+  <script src="./src/render/renderer3d.js"></script>
+  <script src="./src/render/renderer2d.js"></script>
+  <script src="./src/ui/icons.js"></script>
+  <script src="./src/ui/controls.js"></script>
+  <script src="./src/ui/chest_modal.js"></script>
+  <script src="./src/ui/app_ui.js?v=20261118b"></script>
+  <script src="./src/main.js"></script>
+</body>
+</html>
