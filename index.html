@@ -4177,6 +4177,197 @@ html, body {
   .sa-stage-quick-btns .sa-btn-sm { padding: 5px 8px; font-size: 10px; }
 }
 
+/* Star Pass: an original arcade reward trail with clear tier progression. */
+.sa-pass-page { max-width: 1360px; margin: 0 auto; padding: 2px 2px 26px; color:#f5fbff; }
+.sa-season-hero {
+  position:relative; display:flex; align-items:center; justify-content:space-between; gap:20px;
+  min-height:112px; padding:20px 26px; overflow:hidden; border-radius:22px;
+  border:1px solid rgba(255,211,106,.42);
+  background:radial-gradient(ellipse at 8% -10%,rgba(255,203,94,.3),transparent 44%),linear-gradient(125deg,#583f77 0%,#332f66 46%,#1a3d5b 100%);
+  box-shadow:0 10px 26px rgba(0,7,18,.27),inset 0 1px 0 rgba(255,255,255,.19);
+}
+.sa-season-hero::after { content:"★"; position:absolute; right:18%; top:-56px; color:rgba(255,222,129,.08); font-size:190px; line-height:1; pointer-events:none; }
+.sa-season-hero-copy { position:relative; z-index:1; min-width:0; }
+.sa-season-kicker { margin-bottom:4px; color:#ffd982; font-size:9px; font-weight:1000; letter-spacing:1.7px; }
+.sa-season-hero h1 { margin:0; color:#fff; font-size:clamp(23px,3vw,35px); line-height:1.08; }
+.sa-season-hero p { margin:6px 0 0; max-width:650px; color:#e3dff2; font-size:12px; line-height:1.4; }
+.sa-season-token-pill { position:relative; z-index:1; flex:0 0 auto; display:grid; grid-template-columns:auto auto; grid-template-rows:auto auto; align-items:center; column-gap:8px; padding:10px 15px; border:1px solid rgba(255,221,131,.52); border-radius:16px; background:rgba(17,25,53,.7); box-shadow:inset 0 1px 0 rgba(255,255,255,.15); }
+.sa-season-token-pill>span { grid-row:1/3; color:#ffd36a; font-size:24px; }
+.sa-season-token-pill>b { color:#fff; font-size:24px; font-weight:1000; line-height:1; }
+.sa-season-token-pill>small { margin-top:3px; color:#c8c9da; font-size:8px; font-weight:1000; letter-spacing:1px; }
+.sa-season-progress { display:grid; grid-template-columns:minmax(190px,1fr) minmax(230px,1.45fr) 52px; align-items:center; gap:17px; margin:13px 0 19px; padding:13px 18px; border:1px solid rgba(255,215,126,.3); border-radius:17px; background:linear-gradient(145deg,rgba(42,45,81,.98),rgba(20,40,61,.98)); box-shadow:0 6px 16px rgba(0,7,18,.18),inset 0 1px 0 rgba(255,255,255,.1); }
+.sa-season-progress-copy { display:flex; min-width:0; flex-direction:column; gap:4px; }
+.sa-season-progress-copy>div { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.sa-season-progress-copy>div>span { color:#ffd982; font-size:9px; font-weight:1000; letter-spacing:1px; }
+.sa-season-progress-copy strong { color:#fff; font-size:13px; }
+.sa-season-progress-copy small { color:#bdc9d4; font-size:10px; font-weight:800; }
+.sa-season-progress-meter { min-width:0; }
+.sa-season-progress-track { height:11px; padding:2px; overflow:hidden; border:1px solid rgba(255,215,126,.32); border-radius:999px; background:#111b35; box-shadow:inset 0 2px 4px rgba(0,0,0,.38); }
+.sa-season-progress-track span { display:block; height:100%; border-radius:999px; background:linear-gradient(90deg,#8f77e9,#ffbd68,#fff09b); box-shadow:0 0 12px rgba(255,202,106,.45); transition:width .35s ease; }
+.sa-season-progress-meter>div:last-child { display:flex; justify-content:space-between; margin-top:4px; color:#aab7c4; font-size:8px; font-weight:900; }
+.sa-season-progress-meter>div:last-child b { color:#ffda82; }
+.sa-season-progress-badge { display:grid; place-items:center; width:44px; height:44px; border:1px solid rgba(255,220,129,.5); border-radius:14px; color:#ffe088; background:linear-gradient(145deg,#69568f,#354d6f); box-shadow:0 3px 0 rgba(0,0,0,.24),inset 0 1px 0 rgba(255,255,255,.18); font-size:15px; font-weight:1000; }
+.sa-pass-section-title { display:flex; align-items:center; gap:10px; margin:0 3px 10px; color:#f5f4ff; font-size:10px; font-weight:1000; letter-spacing:1.2px; }
+.sa-pass-section-title>i { flex:1; height:1px; background:linear-gradient(90deg,rgba(255,205,112,.55),transparent); }
+.sa-pass-section-title>span { color:#a9bac8; font-size:8px; }
+.sa-pass-section-title>em { display:flex; align-items:center; gap:5px; padding:5px 9px; border:1px solid rgba(111,231,191,.35); border-radius:999px; color:#91f0c7; background:rgba(28,91,76,.35); font-size:8px; font-style:normal; letter-spacing:.3px; }
+.sa-pass-route { --pass-row-gap:30px; position:relative; display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); grid-auto-rows:minmax(158px,auto); gap:var(--pass-row-gap) 13px; padding:9px 4px 30px; }
+.sa-pass-stop { position:relative; z-index:1; grid-row:var(--pass-row); grid-column:var(--pass-col); display:flex; min-width:0; min-height:158px; flex-direction:column; align-items:center; padding:9px 8px; border:1px solid rgba(141,151,209,.38); border-radius:17px; color:#f7f6ff; text-align:center; background:linear-gradient(155deg,#303d78,#1c2c56 78%); box-shadow:0 5px 0 #111a39,0 9px 16px rgba(0,6,20,.22),inset 0 1px 0 rgba(255,255,255,.12); transition:transform .16s ease,filter .16s ease,border-color .16s ease; }
+.sa-pass-stop:hover { transform:translateY(-3px); filter:brightness(1.07); }
+.sa-pass-stop.reached { border-color:rgba(126,231,189,.7); background:linear-gradient(155deg,#276859,#1c4b50 78%); }
+.sa-pass-stop.claimed { opacity:.66; }
+.sa-pass-stop.current { border:2px solid #ffda7a; background:linear-gradient(155deg,#624d7f,#34466b 78%); box-shadow:0 0 0 4px rgba(255,218,122,.1),0 6px 0 #111a39,0 0 22px rgba(255,209,105,.2),inset 0 1px 0 rgba(255,255,255,.22); transform:translateY(-3px); }
+.sa-pass-stop.featured { border-top:3px solid #c392ff; }
+.sa-pass-stop.current.featured { border-color:#ffda7a; }
+.sa-pass-stop-top { position:relative; z-index:3; display:flex; align-items:center; justify-content:center; gap:5px; min-height:20px; color:#ffe08c; font-size:9px; font-weight:1000; }
+.sa-pass-stop-top>span { display:grid; place-items:center; width:18px; height:18px; border-radius:7px; color:#ffe08c; background:rgba(255,216,121,.15); }
+.sa-pass-stop-art { position:relative; z-index:3; display:grid; place-items:center; width:48px; height:48px; flex:0 0 auto; margin:6px 0; border:1px solid rgba(255,255,255,.25); border-radius:16px; color:#fff; background:linear-gradient(145deg,#5470ab,#344c7d); box-shadow:0 4px 0 rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.25); }
+.sa-pass-stop-art.coins { color:#ffdf83; background:linear-gradient(145deg,#9c7548,#634b45); }
+.sa-pass-stop-art.power_points { color:#94ecf0; background:linear-gradient(145deg,#347e91,#315f79); }
+.sa-pass-stop-art.case { color:#e2c4ff; background:linear-gradient(145deg,#8055a2,#503d7d); }
+.sa-pass-stop-art.skin { color:#fff0a1; background:linear-gradient(145deg,#bb784e,#75415b); }
+.sa-pass-stop-reward { position:relative; z-index:3; display:flex; min-height:27px; align-items:center; justify-content:center; color:#f6f5fa; font-size:10px; font-weight:900; line-height:1.25; text-wrap:balance; }
+.sa-pass-special { position:relative; z-index:3; margin-top:2px; color:#dfc9ff; font-size:7px; letter-spacing:.7px; font-weight:1000; }
+.sa-pass-stop.current .sa-pass-special { color:#ffe08c; }
+.sa-pass-claim { position:relative; z-index:4; display:flex; align-items:center; justify-content:center; gap:6px; width:100%; min-height:29px; margin-top:auto; padding:5px 7px; border:1px solid #99633a; border-radius:10px; color:#422918; background:linear-gradient(180deg,#ffe08c,#ffb06e); box-shadow:0 3px 0 #744536,inset 0 1px 0 rgba(255,255,255,.7); cursor:pointer; font:1000 9px/1 system-ui,sans-serif; }
+.sa-pass-claim>b { font-size:14px; }
+.sa-pass-status { position:relative; z-index:3; display:flex; min-height:25px; align-items:center; justify-content:center; gap:4px; margin-top:auto; color:#91a5b4; font-size:8px; font-weight:900; }
+.sa-pass-status.claimed { color:#91edc5; }
+.sa-pass-status.locked small { color:#ffd57e; font-size:7px; font-weight:1000; }
+.sa-pass-link { position:absolute; z-index:2; display:block; pointer-events:none; background:linear-gradient(90deg,#c08c59,#f1cd83); box-shadow:0 0 9px rgba(255,210,125,.23); opacity:.62; }
+.sa-pass-link.right { left:50%; top:50%; width:calc(100% + 13px); height:6px; transform:translateY(-50%); }
+.sa-pass-link.left { right:50%; top:50%; width:calc(100% + 13px); height:6px; transform:translateY(-50%); }
+.sa-pass-link.turn { left:50%; top:50%; width:6px; height:calc(100% + var(--pass-row-gap)); transform:translateX(-50%); background:linear-gradient(180deg,#f1cd83,#c08c59); }
+.sa-pass-stop.reached .sa-pass-link,.sa-pass-stop.current .sa-pass-link { opacity:1; }
+
+@media (max-width: 1100px) {
+  .sa-pass-route { grid-template-columns:repeat(4,minmax(0,1fr)); grid-auto-rows:minmax(150px,auto); gap:18px 10px; }
+  .sa-pass-stop { grid-row:auto !important; grid-column:auto !important; min-height:150px; }
+  .sa-pass-link { display:none; }
+}
+@media (max-width: 760px) {
+  .sa-season-hero { align-items:flex-start; min-height:0; padding:15px; }
+  .sa-season-hero-copy { padding-right:90px; }
+  .sa-season-hero p { font-size:10px; }
+  .sa-season-token-pill { position:absolute; top:11px; right:11px; gap:5px; padding:7px 9px; }
+  .sa-season-token-pill>b { font-size:18px; }
+  .sa-season-token-pill>span { font-size:18px; }
+  .sa-season-token-pill>small { font-size:7px; }
+  .sa-season-progress { grid-template-columns:1fr 40px; gap:10px; padding:11px; }
+  .sa-season-progress-copy { grid-column:1; }
+  .sa-season-progress-meter { grid-column:1 / -1; grid-row:2; }
+  .sa-season-progress-badge { grid-column:2; grid-row:1; width:38px; height:38px; }
+  .sa-pass-route { grid-template-columns:repeat(3,minmax(0,1fr)); gap:11px 8px; padding-left:0; padding-right:0; }
+  .sa-pass-stop { min-height:145px; padding:8px 6px; border-radius:14px; }
+  .sa-pass-stop-art { width:42px; height:42px; border-radius:14px; }
+  .sa-pass-stop-reward { font-size:9px; }
+}
+@media (max-width: 430px) {
+  .sa-pass-route { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .sa-season-hero-copy { padding-right:78px; }
+}
+
+/* Keep both progression screens on one connected, reward-first journey system. */
+.sa-road-route { grid-template-columns:repeat(6,minmax(0,1fr)); grid-auto-rows:minmax(164px,auto); gap:28px 13px; }
+.sa-road-stop { min-height:164px; padding:9px 8px; border-radius:17px; }
+.sa-road-stop-art { width:54px; height:54px; margin:7px 0 5px; border-radius:18px; }
+.sa-road-stop-reward { min-height:28px; font-size:10px; }
+@media (max-width: 1100px) {
+  .sa-road-route { grid-template-columns:repeat(4,minmax(0,1fr)); grid-auto-rows:minmax(154px,auto); gap:18px 10px; }
+  .sa-road-stop { grid-column:auto !important; grid-row:auto !important; min-height:154px; }
+  .sa-road-link { display:none; }
+}
+@media (max-width: 760px) {
+  .sa-road-route { grid-template-columns:repeat(3,minmax(0,1fr)); gap:11px 8px; }
+  .sa-road-stop { min-height:145px; padding:8px 6px; border-radius:14px; }
+  .sa-road-stop-art { width:44px; height:44px; border-radius:15px; margin:6px 0 5px; }
+}
+@media (max-width: 430px) { .sa-road-route { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+
+/* Brighter, chunky progression screens: original Star Arena art direction. */
+.sa-season-hero {
+  min-height:124px;
+  border:3px solid #071a2a;
+  border-radius:22px;
+  background:
+    radial-gradient(circle at 84% 20%,rgba(255,224,137,.34),transparent 22%),
+    radial-gradient(ellipse at 8% 0%,rgba(89,228,218,.3),transparent 40%),
+    linear-gradient(112deg,#285a88 0%,#42569a 47%,#81509c 78%,#bd665d 100%);
+  box-shadow:0 6px 0 #061626,0 14px 26px rgba(0,7,18,.28),inset 0 2px 0 rgba(255,255,255,.24);
+}
+.sa-season-kicker { color:#ffe28a; text-shadow:0 2px 0 rgba(8,23,43,.65); }
+.sa-season-hero h1 { text-shadow:0 3px 0 #17334b,0 0 1px #17334b; }
+.sa-season-hero p { color:#eff7ff; text-shadow:0 1px 2px rgba(5,18,35,.65); }
+.sa-season-token-pill { border:2px solid #071a2a; background:linear-gradient(155deg,#173b58,#102a43); box-shadow:0 3px 0 #061626,inset 0 1px 0 rgba(255,255,255,.23); }
+.sa-season-progress { border:2px solid #071a2a; border-radius:19px; background:linear-gradient(115deg,#214c6b,#273e70 62%,#493b6f); box-shadow:0 5px 0 #061626,0 9px 16px rgba(0,7,18,.22),inset 0 2px 0 rgba(255,255,255,.15); }
+.sa-season-progress-copy>div>span { color:#ffe088; }
+.sa-season-progress-track { height:15px; border:2px solid #07182a; background:#0a2035; }
+.sa-season-progress-track span { background:linear-gradient(90deg,#53dbc7 0%,#64b9ea 43%,#ffd568 78%,#fff1a6 100%); }
+.sa-season-progress-badge { border:2px solid #081a2a; color:#fff0a4; background:linear-gradient(145deg,#ef9a5b,#dc654e); box-shadow:0 4px 0 #773f3b,inset 0 2px 0 rgba(255,255,255,.35); }
+.sa-pass-section-title { color:#fff; text-shadow:0 2px 0 rgba(4,18,32,.7); }
+.sa-pass-section-title>span { padding:4px 8px; border:1px solid rgba(255,220,130,.32); border-radius:999px; color:#ffdf87; background:rgba(10,27,45,.55); }
+.sa-pass-route { --pass-row-gap:32px; }
+.sa-pass-stop {
+  border:3px solid #071a2a;
+  border-radius:19px;
+  background:linear-gradient(160deg,#315c80 0%,#224363 72%,#1b3858 100%);
+  box-shadow:0 5px 0 #061626,0 10px 16px rgba(0,6,20,.24),inset 0 2px 0 rgba(255,255,255,.2);
+}
+.sa-pass-stop.reached { border-color:#062a32; background:linear-gradient(160deg,#2a927e,#236a68 78%); }
+.sa-pass-stop.claimed { opacity:.72; filter:saturate(.72); }
+.sa-pass-stop.current {
+  border:3px solid #ffe07a;
+  background:linear-gradient(155deg,#427e9a,#325c83 74%,#344b77);
+  box-shadow:0 0 0 4px rgba(255,220,112,.16),0 5px 0 #071827,0 0 24px rgba(255,215,104,.25),inset 0 2px 0 rgba(255,255,255,.29);
+}
+.sa-pass-stop.featured { border-top:5px solid #ef9dff; }
+.sa-pass-stop.current.featured { border-top-color:#ffe07a; }
+.sa-pass-stop-top { color:#ffe38d; text-shadow:0 2px 0 rgba(4,18,32,.7); }
+.sa-pass-stop-top>span { border:1px solid rgba(255,224,133,.42); background:linear-gradient(145deg,#8a68a8,#63558e); box-shadow:inset 0 1px 0 rgba(255,255,255,.28); }
+.sa-pass-stop-art { width:58px; height:58px; border:2px solid #071a2a; border-radius:19px; background:linear-gradient(145deg,#4a9cad,#316782); box-shadow:0 4px 0 #061626,inset 0 2px 0 rgba(255,255,255,.3); }
+.sa-pass-stop-art .sa-ico { width:29px !important; height:29px !important; }
+.sa-pass-stop-art.coins { background:linear-gradient(145deg,#e2a64f,#ad673e); color:#fff0a5; }
+.sa-pass-stop-art.power_points { background:linear-gradient(145deg,#3dc0c0,#2d7798); color:#d8ffff; }
+.sa-pass-stop-art.case { background:linear-gradient(145deg,#b37be2,#6949a5); color:#fff; }
+.sa-pass-stop-art.skin { background:linear-gradient(145deg,#f09b64,#af4d71); color:#fff5bd; }
+.sa-pass-stop-reward { color:#fff; text-shadow:0 1px 2px rgba(3,15,28,.75); }
+.sa-pass-claim { border:2px solid #754734; color:#492c22; background:linear-gradient(180deg,#ffe68e,#ffae62); box-shadow:0 3px 0 #704230,inset 0 2px 0 rgba(255,255,255,.72); }
+.sa-pass-status.locked { color:#bdccda; }
+.sa-pass-link.right,.sa-pass-link.left { height:9px; border:2px solid #071a2a; border-radius:999px; background:linear-gradient(90deg,#49c7c5,#ffdc78); box-shadow:0 0 10px rgba(255,213,112,.36); }
+.sa-pass-link.turn { width:9px; border:2px solid #071a2a; border-radius:999px; background:linear-gradient(180deg,#ffdc78,#49c7c5); }
+.sa-pass-stop.reached .sa-pass-link,.sa-pass-stop.current .sa-pass-link { filter:brightness(1.1); }
+
+.sa-road-hero {
+  border:3px solid #071a2a;
+  background:
+    radial-gradient(circle at 88% 12%,rgba(255,222,131,.26),transparent 20%),
+    radial-gradient(ellipse at 7% 5%,rgba(74,224,216,.26),transparent 42%),
+    linear-gradient(115deg,#1e6483,#285d83 55%,#45538a);
+  box-shadow:0 6px 0 #061626,0 14px 26px rgba(0,7,18,.27),inset 0 2px 0 rgba(255,255,255,.2);
+}
+.sa-road-total { border:2px solid #071a2a; background:linear-gradient(155deg,#173b58,#102a43); box-shadow:0 3px 0 #061626,inset 0 1px 0 rgba(255,255,255,.2); }
+.sa-road-progress-card { border:2px solid #071a2a; background:linear-gradient(115deg,#214c6b,#24486d 60%,#38426f); box-shadow:0 5px 0 #061626,0 9px 16px rgba(0,7,18,.22),inset 0 2px 0 rgba(255,255,255,.15); }
+.sa-road-progress-track { height:15px; border:2px solid #07182a; }
+.sa-road-stop { border:3px solid #071a2a; border-radius:19px; background:linear-gradient(160deg,#315c80,#224363 74%,#1b3858); box-shadow:0 5px 0 #061626,0 10px 16px rgba(0,6,20,.24),inset 0 2px 0 rgba(255,255,255,.2); }
+.sa-road-stop.reached { border-color:#062a32; background:linear-gradient(160deg,#2a927e,#236a68 78%); }
+.sa-road-stop.current { border:3px solid #ffe07a; background:linear-gradient(155deg,#427e9a,#325c83 74%,#344b77); box-shadow:0 0 0 4px rgba(255,220,112,.16),0 5px 0 #071827,0 0 24px rgba(255,215,104,.25),inset 0 2px 0 rgba(255,255,255,.29); }
+.sa-road-stop.featured { border-top:5px solid #ef9dff; }
+.sa-road-stop.current.featured { border-top-color:#ffe07a; }
+.sa-road-stop-art { width:58px; height:58px; border:2px solid #071a2a; border-radius:19px; background:linear-gradient(145deg,#4a9cad,#316782); box-shadow:0 4px 0 #061626,inset 0 2px 0 rgba(255,255,255,.3); }
+.sa-road-stop-art .sa-ico { width:29px !important; height:29px !important; }
+.sa-road-stop-art.coins { background:linear-gradient(145deg,#e2a64f,#ad673e); color:#fff0a5; }
+.sa-road-stop-art.power_points { background:linear-gradient(145deg,#3dc0c0,#2d7798); color:#d8ffff; }
+.sa-road-stop-art.case { background:linear-gradient(145deg,#b37be2,#6949a5); color:#fff; }
+.sa-road-stop-art.hero { background:linear-gradient(145deg,#f09b64,#af4d71); color:#fff5bd; }
+.sa-road-stop-reward { color:#fff; text-shadow:0 1px 2px rgba(3,15,28,.75); }
+.sa-road-link.right,.sa-road-link.left { height:9px; border:2px solid #071a2a; border-radius:999px; background:linear-gradient(90deg,#49c7c5,#ffdc78); box-shadow:0 0 10px rgba(255,213,112,.36); }
+.sa-road-link.turn { width:9px; border:2px solid #071a2a; border-radius:999px; background:linear-gradient(180deg,#ffdc78,#49c7c5); }
+
+@media (max-width: 760px) {
+  .sa-pass-stop-art,.sa-road-stop-art { width:48px; height:48px; border-radius:16px; }
+  .sa-pass-stop-art .sa-ico,.sa-road-stop-art .sa-ico { width:25px !important; height:25px !important; }
+}
+
 </style>
 </head>
 <body>
@@ -16722,10 +16913,10 @@ function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"f
         const reached = totalTrophies >= node.trophies;
         const claimed = save.claimedRoad.includes(node.trophies);
         const isCurrent = nextNode === node;
-        const row = Math.floor(index / 5);
-        const pos = index % 5;
-        const col = row % 2 === 0 ? pos : 4 - pos;
-        const turnEnd = pos === 4 && index < nodes.length - 1;
+        const row = Math.floor(index / 6);
+        const pos = index % 6;
+        const col = row % 2 === 0 ? pos : 5 - pos;
+        const turnEnd = pos === 5 && index < nodes.length - 1;
         const featured = node.reward.type === 'hero' || node.reward.type === 'case';
         const link = index < nodes.length - 1
           ? `<span class="sa-road-link ${turnEnd ? 'turn' : (row % 2 === 0 ? 'right' : 'left')}" aria-hidden="true"></span>`
@@ -16795,34 +16986,83 @@ function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"f
     function renderSeasonView(container) {
       disposeTurntable();
       const season = gameData.meta.season;
+      const nodes = season.tiers || [];
+      const lastTokens = nodes.length ? nodes[nodes.length - 1].tokensRequired : 0;
+      const nextNode = nodes.find(n => save.seasonTokens < n.tokensRequired) || null;
+      const previousNode = [...nodes].reverse().find(n => save.seasonTokens >= n.tokensRequired) || null;
+      const previousTokens = previousNode ? previousNode.tokensRequired : 0;
+      const nextTokens = nextNode ? nextNode.tokensRequired : lastTokens;
+      const nextGap = nextNode ? Math.max(0, nextTokens - save.seasonTokens) : 0;
+      const totalPct = lastTokens ? Math.max(0, Math.min(100, Math.round(save.seasonTokens / lastTokens * 100))) : 100;
+      const localPct = nextNode
+        ? Math.max(0, Math.min(100, Math.round((save.seasonTokens - previousTokens) / Math.max(1, nextTokens - previousTokens) * 100)))
+        : 100;
+      const claimableCount = nodes.filter(n => save.seasonTokens >= n.tokensRequired && !save.claimedSeason.includes(n.tier)).length;
+      const rewardIcon = reward => reward.type === 'case' ? ico('case')
+        : reward.type === 'skin' ? ico('star')
+        : reward.type === 'power_points' ? ico('bolt')
+        : ico('coin');
+      const readyText = i18n.getLang() === 'ru'
+        ? `${claimableCount} ${claimableCount % 10 === 1 && claimableCount % 100 !== 11 ? 'НАГРАДА ДОСТУПНА' : claimableCount % 10 >= 2 && claimableCount % 10 <= 4 && (claimableCount % 100 < 12 || claimableCount % 100 > 14) ? 'НАГРАДЫ ДОСТУПНЫ' : 'НАГРАД ДОСТУПНО'}`
+        : `${claimableCount} REWARDS READY`;
+
+      const route = nodes.map((node, index) => {
+        const reached = save.seasonTokens >= node.tokensRequired;
+        const claimed = save.claimedSeason.includes(node.tier);
+        const current = node === nextNode;
+        const row = Math.floor(index / 6);
+        const pos = index % 6;
+        const col = row % 2 === 0 ? pos : 5 - pos;
+        const turnEnd = pos === 5 && index < nodes.length - 1;
+        const featured = node.reward.type === 'skin' || node.reward.type === 'case';
+        const link = index < nodes.length - 1
+          ? `<span class="sa-pass-link ${turnEnd ? 'turn' : (row % 2 === 0 ? 'right' : 'left')}" aria-hidden="true"></span>`
+          : '';
+        const status = reached && !claimed
+          ? `<button type="button" class="sa-pass-claim" data-claim-season="${node.tier}">${i18n.t('btn_claim')} <b>＋</b></button>`
+          : claimed
+            ? `<span class="sa-pass-status claimed">✓ ${i18n.t('btn_claimed')}</span>`
+            : `<span class="sa-pass-status locked">${ico('lock')} ${current && nextGap ? `<small>${nextGap} ${i18n.getLang() === 'ru' ? 'ЖЕТОНОВ' : 'TOKENS'}</small>` : ''}</span>`;
+        return `
+          <article class="sa-pass-stop ${reached ? 'reached' : ''} ${claimed ? 'claimed' : ''} ${current ? 'current' : ''} ${featured ? 'featured' : ''} ${turnEnd ? 'turn-end' : ''}"
+            style="--pass-row:${row + 1};--pass-col:${col + 1}">
+            ${link}
+            <div class="sa-pass-stop-top"><span>${ico('star')}</span><b>${i18n.t('season_tier_label', { tier: node.tier, tokens: node.tokensRequired })}</b></div>
+            <div class="sa-pass-stop-art ${node.reward.type}">${rewardIcon(node.reward)}</div>
+            <div class="sa-pass-stop-reward">${i18n.pick(node.reward, 'label')}</div>
+            ${featured ? `<small class="sa-pass-special">${node.reward.type === 'skin' ? (i18n.getLang() === 'ru' ? 'ОСОБАЯ НАГРАДА' : 'SPECIAL REWARD') : (i18n.getLang() === 'ru' ? 'КЕЙС' : 'CASE')}</small>` : ''}
+            ${status}
+          </article>
+        `;
+      }).join('');
+
       container.innerHTML = `
-        <div class="sa-card">
-          <h2>${ico('star')} ${i18n.pick(season, 'name')}</h2>
-          <p class="sa-muted">${i18n.t('season_subtitle')} · ★ <b>${save.seasonTokens}</b></p>
-          <div class="sa-road-track">
-            ${season.tiers.map(node => {
-              const reached = save.seasonTokens >= node.tokensRequired;
-              const claimed = save.claimedSeason.includes(node.tier);
-              const rIco = node.reward.type === 'case' ? ico('case') : (node.reward.type === 'skin' ? ico('star') : (node.reward.type === 'power_points' ? ico('bolt') : ico('coin')));
-              return `
-                <div class="sa-road-node ${reached ? 'reached' : ''} ${claimed ? 'claimed' : ''}">
-                  <div class="sa-road-trophies">${i18n.t('season_tier_label', { tier: node.tier, tokens: node.tokensRequired })}</div>
-                  <div class="sa-road-ico">${rIco}</div>
-                  <div class="sa-road-lbl">${i18n.pick(node.reward, 'label')}</div>
-                  ${reached && !claimed
-                    ? `<button class="sa-btn sa-btn-gold sa-btn-sm" data-claim-season="${node.tier}">${i18n.t('btn_claim')}</button>`
-                    : `<span class="sa-road-status">${claimed ? i18n.t('btn_claimed') : ico('lock')}</span>`}
-                </div>
-              `;
-            }).join('')}
-          </div>
-        </div>
+        <section class="sa-pass-page">
+          <header class="sa-season-hero">
+            <div class="sa-season-hero-copy">
+              <div class="sa-season-kicker">✦ ${i18n.getLang() === 'ru' ? 'СЕЗОННЫЙ ПРОПУСК' : 'SEASON PASS'}</div>
+              <h1>${i18n.pick(season, 'name')}</h1>
+              <p>${i18n.t('season_subtitle')}</p>
+            </div>
+            <div class="sa-season-token-pill"><span>★</span><b>${save.seasonTokens}</b><small>${i18n.getLang() === 'ru' ? 'ЖЕТОНЫ' : 'TOKENS'}</small></div>
+          </header>
+          <section class="sa-season-progress">
+            <div class="sa-season-progress-copy">
+              <div><span>${nextNode ? (i18n.getLang() === 'ru' ? 'СЛЕДУЮЩИЙ УРОВЕНЬ' : 'NEXT TIER') : (i18n.getLang() === 'ru' ? 'ПРОПУСК ЗАВЕРШЁН' : 'PASS COMPLETE')}</span><strong>${nextNode ? i18n.t('season_tier_label', { tier: nextNode.tier, tokens: nextNode.tokensRequired }) : `${nodes.length} / ${nodes.length}`}</strong></div>
+              <small>${nextNode ? `${nextGap} ${i18n.getLang() === 'ru' ? 'жетонов до награды' : 'tokens to next reward'}` : (i18n.getLang() === 'ru' ? 'Все сезонные рубежи открыты' : 'All season milestones reached')}</small>
+            </div>
+            <div class="sa-season-progress-meter"><div class="sa-season-progress-track"><span style="width:${totalPct}%"></span></div><div><span>0</span><b>${lastTokens} ★</b></div></div>
+            <div class="sa-season-progress-badge">${nextNode ? `${localPct}%` : '✓'}</div>
+          </section>
+          <div class="sa-pass-section-title"><b>${i18n.getLang() === 'ru' ? 'НАГРАДНОЙ МАРШРУТ' : 'REWARD TRACK'}</b><i></i><span>${i18n.getLang() === 'ru' ? 'БЕСПЛАТНЫЙ ТРЕК' : 'FREE TRACK'} · ${nodes.length} ${i18n.getLang() === 'ru' ? 'УРОВНЕЙ' : 'TIERS'}</span>${claimableCount ? `<em>${ico('gift')} ${readyText}</em>` : ''}</div>
+          <div class="sa-pass-route ${nextNode ? '' : 'complete'}">${route}</div>
+        </section>
       `;
 
       container.querySelectorAll('[data-claim-season]').forEach(btn => {
         btn.onclick = () => {
           const tier = Number(btn.getAttribute('data-claim-season'));
-          const node = season.tiers.find(n => n.tier === tier);
+          const node = nodes.find(n => n.tier === tier);
           if (!node || save.claimedSeason.includes(tier) || save.seasonTokens < node.tokensRequired) return;
           save.claimedSeason.push(tier);
           grantRewardObject(node.reward, i18n.t('ledger_season', { tier }));
@@ -18452,5 +18692,5 @@ function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"f
 })(typeof window !== 'undefined' ? window : globalThis);
 
 </script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5ced7a56ef223e3',t:'MTc5NTA4NzQwMQ=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5ced7a56ef223e3',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
