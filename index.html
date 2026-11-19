@@ -4110,6 +4110,73 @@ html, body {
 }
 @media (prefers-reduced-motion: reduce) { .sa-road-stop { transition:none; } }
 
+/* Screen-fit shell: keep the game inside the viewport and suppress scrollbar chrome. */
+html, body {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden !important;
+  overscroll-behavior: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+*, *::before, *::after { scrollbar-width: none; -ms-overflow-style: none; }
+*::-webkit-scrollbar, *::-webkit-scrollbar-thumb, *::-webkit-scrollbar-track {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
+}
+.sa-lobby-root {
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+.sa-topbar, .sa-navbar { flex: 0 0 auto; min-width: 0; }
+.sa-view-content {
+  flex: 1 1 0%;
+  min-width: 0;
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.sa-stage-screen {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+.sa-stage-middle { min-width: 0; min-height: 0; }
+.sa-center-stage, .sa-left-dock, .sa-right-pod, .sa-stage-bottom { min-width: 0; }
+
+/* Compress the lobby's stage rather than letting it push the shell past short screens. */
+@media (max-height: 820px) and (min-width: 761px) {
+  .sa-topbar { padding-top: max(5px, env(safe-area-inset-top, 5px)); padding-bottom: 5px; }
+  .sa-view-content { padding-top: 5px; padding-bottom: 5px; }
+  .sa-stage-screen { gap: clamp(2px, .55vh, 6px); }
+  .sa-stage-middle { gap: clamp(6px, .8vw, 12px); }
+  .sa-turntable-wrap { height: clamp(118px, 26vh, 200px); }
+  .sa-dock-btn { padding: clamp(5px, .8vh, 9px) 10px; }
+  .sa-capsule-pod { padding: 8px 9px; gap: 5px; }
+  .sa-stage-bottom { gap: 8px; }
+  .sa-pass-banner { padding-top: 6px; padding-bottom: 6px; }
+  .sa-event-slot-btn { padding-top: 5px; padding-bottom: 5px; }
+}
+@media (max-height: 620px) and (min-width: 761px) {
+  .sa-turntable-wrap { height: 112px; }
+  .sa-stage-hero-name { font-size: 21px; line-height: 1; }
+  .sa-hero-overhead { gap: 4px; }
+  .sa-rank-crest, .sa-power-pill, .sa-rarity-tag { padding: 2px 7px; font-size: 10px; }
+  .sa-stage-quick-btns { gap: 4px; }
+  .sa-stage-quick-btns .sa-btn-sm { padding: 5px 8px; font-size: 10px; }
+}
+
 </style>
 </head>
 <body>
@@ -18385,5 +18452,5 @@ function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"f
 })(typeof window !== 'undefined' ? window : globalThis);
 
 </script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5cec925df8a3291',t:'MTc5NTA4NjgwNw=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5cec925df8a3291',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5ced7a56ef223e3',t:'MTc5NTA4NzQwMQ=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5ced7a56ef223e3',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
