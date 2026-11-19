@@ -3843,6 +3843,273 @@ html, body {
   .sa-event-slot-btn, .sa-event-card { transition: none !important; }
 }
 
+/* Original Star Arena signature: midnight-teal command deck + warm coral action accents.
+   Familiar brawler information hierarchy, original component shapes and color language. */
+:root {
+  --bg-deep: #071a2e;
+  --bg-stage-mid: #123d62;
+  --bg-panel: rgba(9, 27, 48, .96);
+  --bg-card: linear-gradient(160deg, #183b5a, #102943);
+  --ink-outline: #071525;
+  --border-glow: rgba(73, 211, 226, .35);
+  --text-main: #f6fbff;
+  --text-muted: #b6ccdb;
+  --accent-gold: #ffd36a;
+  --accent-orange: #ff805a;
+  --accent-cyan: #61d9e8;
+  --accent-green: #57dfa9;
+  --accent-pink: #ff6688;
+  --accent-purple: #b49bff;
+  --stroke-shadow: 0 2px 0 rgba(5, 19, 34, .8), 0 3px 9px rgba(0,0,0,.25);
+}
+html, body {
+  background:
+    radial-gradient(ellipse at 50% 38%, rgba(36, 123, 155, .27), transparent 52%),
+    radial-gradient(ellipse at 50% 115%, rgba(255, 125, 82, .09), transparent 44%),
+    linear-gradient(180deg, #0a2037, #071628 72%, #061321);
+  color: var(--text-main);
+}
+.sa-lobby-root {
+  background:
+    radial-gradient(ellipse at 50% 36%, rgba(44, 134, 158, .24), transparent 48%),
+    radial-gradient(ellipse at 50% 93%, rgba(255, 127, 86, .12), transparent 40%),
+    linear-gradient(180deg, #123655 0%, #0b2944 48%, #071b30 100%);
+}
+.sa-topbar {
+  background: linear-gradient(180deg, rgba(5, 20, 36, .97), rgba(10, 34, 55, .92));
+  border-bottom: 1px solid rgba(132, 209, 220, .22);
+  box-shadow: 0 6px 24px rgba(0, 8, 20, .24);
+}
+.sa-profile-pill, .sa-curr-pill, .sa-road-mini-bar {
+  background: linear-gradient(180deg, #234a68, #153550);
+  border-color: #06182a;
+  box-shadow: 0 3px 0 #061626, inset 0 1px 0 rgba(255,255,255,.2);
+}
+.sa-curr-pill.coins { border-color: #8d6330; }
+.sa-curr-pill.pp { border-color: #486b98; }
+.sa-curr-pill.cases { background: linear-gradient(180deg, #694988, #3f315e); border-color: #9d76c8; }
+.sa-navbar {
+  background: linear-gradient(180deg, rgba(13, 36, 56, .98), rgba(5, 19, 33, .99));
+  border-top: 1px solid rgba(123, 202, 214, .2);
+  box-shadow: 0 -8px 24px rgba(0, 8, 20, .22);
+}
+.sa-nav-btn {
+  background: linear-gradient(180deg, #1c3f5b, #112c44);
+  border-color: #06182b;
+  border-radius: 13px 13px 17px 17px;
+  color: #dcecf4;
+  box-shadow: 0 3px 0 #041321, inset 0 1px 0 rgba(255,255,255,.12);
+}
+.sa-nav-btn.active {
+  color: #091d2b;
+  background: linear-gradient(180deg, #ffd982, #ff9c66);
+  border-color: #071727;
+  text-shadow: none;
+  box-shadow: 0 3px 0 #80492f, inset 0 1px 0 rgba(255,255,255,.7);
+}
+.sa-card, .sa-capsule-pod, .sa-events-modal-card, .sa-results-card,
+.sa-quest-card, .sa-season-card, .sa-fighter-card, .sa-profile-card {
+  background: linear-gradient(155deg, rgba(25, 57, 81, .98), rgba(12, 34, 55, .98));
+  border: 1.5px solid rgba(130, 196, 211, .35);
+  border-radius: 17px;
+  box-shadow: 0 7px 18px rgba(0, 8, 18, .28), inset 0 1px 0 rgba(255,255,255,.11);
+}
+.sa-dock-btn {
+  background: linear-gradient(160deg, #214a68, #14324e);
+  border: 1.5px solid rgba(111, 184, 202, .42);
+  border-radius: 15px;
+  box-shadow: 0 4px 0 #071827, 0 8px 15px rgba(0,0,0,.18), inset 0 1px 0 rgba(255,255,255,.15);
+  transition: transform .15s ease, filter .15s ease;
+}
+.sa-dock-btn:hover { transform: translateY(-2px); filter: brightness(1.08); }
+.sa-dock-btn.fighters .sa-dock-ico { background: linear-gradient(145deg, #fb8864, #cb5260); }
+.sa-dock-btn.gifts .sa-dock-ico { background: linear-gradient(145deg, #c27cda, #7558ae); }
+.sa-dock-btn.quests .sa-dock-ico { background: linear-gradient(145deg, #62d8c0, #278a9a); }
+.sa-dock-btn.club .sa-dock-ico { background: linear-gradient(145deg, #ffd176, #df874e); }
+.sa-center-stage::before {
+  inset: 1% -8% -1%;
+  background: radial-gradient(ellipse at 50% 46%, rgba(61, 169, 185, .2), rgba(21, 68, 97, .12) 42%, transparent 72%);
+}
+.sa-turntable-wrap::after {
+  background: radial-gradient(ellipse, rgba(91, 226, 218, .4), rgba(255, 137, 93, .19) 46%, transparent 76%);
+}
+.sa-stage-hero-name { letter-spacing: .35px; text-shadow: 0 3px 0 #092034, 0 5px 16px rgba(0,0,0,.28); }
+.sa-stage-hero-sub { color: #c1dbe4; }
+.sa-rank-crest, .sa-power-pill, .sa-rarity-tag {
+  border-radius: 999px;
+  box-shadow: 0 2px 0 rgba(4, 18, 31, .72);
+}
+.sa-rank-crest { background: linear-gradient(180deg, #7864ad, #4c467e); }
+.sa-power-pill { background: linear-gradient(180deg, #dc6472, #a7435f); }
+.sa-event-slot-btn {
+  background: linear-gradient(145deg, #1d4865, #102f4c);
+  border: 1.5px solid rgba(119, 190, 205, .45);
+  border-top: 4px solid var(--mode-col, #60d5d2);
+  border-radius: 17px;
+  box-shadow: 0 5px 0 #071a2a, 0 12px 24px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.13);
+}
+.sa-event-slot-ico { border-radius: 14px; box-shadow: 0 3px 0 rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.3); }
+.sa-event-slot-lbl { color: #7de0df; }
+.sa-event-slot-map { color: #b8d2dc; }
+.sa-btn, .sa-chip-btn, .sa-back-btn {
+  border-radius: 12px;
+  border-color: #081a2a;
+  box-shadow: 0 3px 0 rgba(3, 15, 26, .85), inset 0 1px 0 rgba(255,255,255,.25);
+  transition: transform .12s ease, filter .12s ease;
+}
+.sa-btn:hover:not(:disabled), .sa-chip-btn:hover:not(:disabled) { filter: brightness(1.08); transform: translateY(-1px); }
+.sa-btn-primary { background: linear-gradient(180deg, #55cfce, #278caa); color: #062333; text-shadow: none; }
+.sa-btn-accent { background: linear-gradient(180deg, #bd9cff, #795fc1); }
+.sa-btn-gold { background: linear-gradient(180deg, #ffd982, #ff9c66); color: #2d211a; text-shadow: none; }
+.sa-btn-battle {
+  color: #fffaf4;
+  background: linear-gradient(180deg, #ff9870 0%, #ef6b5c 58%, #d65359 100%);
+  border: 2.5px solid #081a2a;
+  border-radius: 17px;
+  text-shadow: 0 2px 0 #933e47;
+  box-shadow: 0 6px 0 #773b43, 0 10px 24px rgba(255, 109, 86, .25), inset 0 2px 0 rgba(255,255,255,.58);
+}
+@keyframes saPlayPulse {
+  0%,100% { transform: translateY(0) scale(1); box-shadow: 0 6px 0 #773b43, 0 9px 20px rgba(255,109,86,.22), inset 0 2px 0 rgba(255,255,255,.55); }
+  50% { transform: translateY(-1px) scale(1.012); box-shadow: 0 7px 0 #773b43, 0 14px 27px rgba(255,109,86,.32), inset 0 2px 0 rgba(255,255,255,.66); }
+}
+.sa-btn-battle:active:not(:disabled) { box-shadow: 0 2px 0 #773b43, inset 0 1px 0 rgba(255,255,255,.42); }
+.sa-pass-banner { background: linear-gradient(145deg, #594e8c, #302f65); border: 1.5px solid rgba(191, 164, 255, .55); border-radius: 17px; }
+.sa-pass-emblem { background: linear-gradient(145deg, #ffda7b, #f28c58); }
+.sa-wins-track, .sa-pass-bar { background: #091d31; border-color: #071728; }
+.sa-case-overlay, .sa-results-overlay, .sa-demo-ad-overlay, .sa-preloader, .sa-unsupported {
+  background: rgba(3, 13, 25, .84);
+  backdrop-filter: blur(8px);
+}
+.sa-case-card, .sa-results-card, .sa-demo-ad-card, .sa-unsupported-card {
+  background: linear-gradient(155deg, #1d4764, #0c253d);
+  border: 2px solid #78d8d8;
+  outline: 0;
+  border-radius: 21px;
+  box-shadow: 0 18px 54px rgba(0,0,0,.48), inset 0 1px 0 rgba(255,255,255,.18);
+}
+.sa-event-card { background: linear-gradient(155deg, #1a3c58, #0d2841); border: 1.5px solid rgba(125,191,204,.36); border-radius: 15px; }
+.sa-event-card.selected { outline-color: #ffcf72; }
+.sa-hud-scoreboard { background: linear-gradient(160deg, rgba(12,39,61,.96), rgba(6,24,40,.96)); border-color: rgba(130,204,216,.48); }
+.sa-hud-timer { background: #071b2d; }
+.sa-hud-objective { background: linear-gradient(160deg, rgba(18,58,77,.97), rgba(8,34,51,.97)); border-color: rgba(106,220,213,.76); }
+.sa-hud-objective-mark { color: #ffcf72; }
+.sa-hud-banner { background: linear-gradient(160deg, rgba(19,58,77,.97), rgba(8,31,50,.97)); border-color: #ffcf72; border-radius: 14px; }
+.sa-pin-tray, .sa-toast { background: rgba(10,35,54,.97); border-color: #67d7d8; }
+.sa-results-card .sa-res-rewards .sa-res-pill { background: rgba(7,26,43,.72); border-color: rgba(128,195,206,.35); }
+
+@media (max-width: 760px) {
+  .sa-topbar { padding-left: 8px; padding-right: 8px; }
+  .sa-stage-hero-name { font-size: clamp(19px, 5.5vw, 25px); }
+  .sa-play-cluster { gap: 7px; }
+  .sa-btn-battle { border-radius: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sa-dock-btn, .sa-btn, .sa-chip-btn { transition: none !important; }
+}
+
+/* Trophy Road: a milestone journey, not a wall of identical reward tiles. */
+.sa-road-page { max-width: 1360px; margin: 0 auto; padding: 2px 2px 26px; color: #f4fbff; }
+.sa-road-hero {
+  position: relative; display: flex; align-items: center; justify-content: space-between; gap: 18px;
+  min-height: 112px; padding: 22px 26px; overflow: hidden;
+  border: 1px solid rgba(111, 216, 218, .35); border-radius: 22px;
+  background: radial-gradient(ellipse at 10% 0%, rgba(87, 212, 202, .22), transparent 45%), linear-gradient(135deg, #173d58, #102b45 70%, #182c4d);
+  box-shadow: 0 10px 28px rgba(0,7,18,.25), inset 0 1px 0 rgba(255,255,255,.13);
+}
+.sa-road-hero::after { content:"✦"; position:absolute; right:23%; top:-35px; font-size:150px; color:rgba(255,211,106,.07); pointer-events:none; }
+.sa-road-hero-copy { min-width:0; position:relative; z-index:1; }
+.sa-road-eyebrow { color:#71dfd7; font-size:10px; font-weight:1000; letter-spacing:1.7px; margin-bottom:5px; }
+.sa-road-hero h1 { margin:0; color:#fff; font-size:clamp(24px,3vw,36px); line-height:1.08; letter-spacing:.2px; }
+.sa-road-hero p { margin:7px 0 0; max-width:620px; color:#bfd5e1; font-size:13px; line-height:1.45; }
+.sa-road-total { display:flex; align-items:baseline; gap:7px; flex:0 0 auto; padding:10px 16px; border-radius:16px; background:rgba(5,20,35,.62); border:1px solid rgba(255,211,106,.45); box-shadow:inset 0 1px 0 rgba(255,255,255,.08); }
+.sa-road-total>span { color:#ffd36a; font-size:19px; }
+.sa-road-total>b { color:#fff; font-size:27px; font-weight:1000; }
+.sa-road-total>small { color:#b8cbd6; font-size:10px; font-weight:900; }
+.sa-road-ready { position:absolute; right:22px; bottom:10px; display:flex; align-items:center; gap:5px; color:#7bf0c5; font-size:10px; font-weight:1000; letter-spacing:.5px; }
+.sa-road-progress-card {
+  display:grid; grid-template-columns:minmax(190px,.95fr) minmax(220px,1.5fr) 56px; align-items:center; gap:18px;
+  margin:14px 0 20px; padding:15px 20px; border-radius:18px;
+  background:linear-gradient(145deg,rgba(24,57,78,.97),rgba(12,35,56,.97));
+  border:1px solid rgba(124,202,211,.28); box-shadow:0 6px 17px rgba(0,7,18,.18),inset 0 1px 0 rgba(255,255,255,.08);
+}
+.sa-road-progress-copy { display:flex; flex-direction:column; gap:3px; min-width:0; }
+.sa-road-progress-label { color:#78ddd9; font-size:9px; font-weight:1000; letter-spacing:1.15px; }
+.sa-road-progress-copy strong { overflow:hidden; color:#fff; font-size:14px; text-overflow:ellipsis; white-space:nowrap; }
+.sa-road-progress-copy small { color:#b5cbd6; font-size:10px; font-weight:800; }
+.sa-road-progress-track { height:11px; padding:2px; overflow:hidden; border-radius:999px; background:#061a2c; border:1px solid rgba(131,195,204,.3); box-shadow:inset 0 2px 4px rgba(0,0,0,.4); }
+.sa-road-progress-track span { display:block; height:100%; border-radius:999px; background:linear-gradient(90deg,#4ed3c2,#ffd36a); box-shadow:0 0 12px rgba(86,221,202,.4); transition:width .35s ease; }
+.sa-road-progress-ends { display:flex; justify-content:space-between; margin-top:4px; color:#91aab7; font-size:9px; font-weight:900; }
+.sa-road-progress-ends b { color:#ffcf72; }
+.sa-road-next-art { display:grid; place-items:center; width:48px; height:48px; border-radius:15px; color:#ffd36a; font-size:22px; background:linear-gradient(145deg,#624d83,#3a3b68); border:1px solid rgba(255,211,106,.4); box-shadow:0 3px 0 rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.2); }
+.sa-road-section-heading { display:flex; align-items:center; gap:10px; margin:0 2px 12px; color:#e9f5f9; font-size:11px; font-weight:1000; letter-spacing:1.25px; }
+.sa-road-section-heading i { height:1px; flex:1; background:linear-gradient(90deg,rgba(118,198,205,.4),transparent); }
+.sa-road-section-heading small { color:#91aebb; font-size:9px; }
+.sa-road-route {
+  --road-row-gap:38px;
+  position:relative; display:grid; grid-template-columns:repeat(5,minmax(0,1fr));
+  grid-auto-rows:minmax(204px,auto); gap:var(--road-row-gap) 16px; padding:10px 4px 34px;
+}
+.sa-road-stop {
+  position:relative; z-index:1; grid-row:var(--road-row); grid-column:var(--road-col); align-self:stretch;
+  display:flex; flex-direction:column; align-items:center; min-width:0; min-height:204px; padding:12px 10px 11px;
+  border:1px solid rgba(116,167,193,.32); border-radius:19px;
+  background:linear-gradient(155deg,#193b5a,#0e2945 76%); text-align:center;
+  box-shadow:0 5px 0 #071a2a,0 11px 18px rgba(0,7,18,.2),inset 0 1px 0 rgba(255,255,255,.11);
+  transition:transform .16s ease,filter .16s ease,border-color .16s ease,box-shadow .16s ease;
+}
+.sa-road-stop:hover { transform:translateY(-3px); filter:brightness(1.06); }
+.sa-road-stop.reached { border-color:rgba(94,220,191,.68); background:linear-gradient(155deg,#1d564f,#163f4b 80%); }
+.sa-road-stop.claimed { opacity:.72; }
+.sa-road-stop.current { border:2px solid #ffd36a; background:linear-gradient(155deg,#35566b,#183a53); box-shadow:0 0 0 4px rgba(255,211,106,.12),0 7px 0 #071a2a,0 0 25px rgba(255,211,106,.18),inset 0 1px 0 rgba(255,255,255,.24); transform:translateY(-4px); }
+.sa-road-stop.featured { border-top:3px solid #bb9bff; }
+.sa-road-stop.featured.current { border-color:#ffd36a; }
+.sa-road-stop-top { position:relative; z-index:3; display:flex; align-items:center; gap:5px; color:#ffda7c; font-size:12px; font-weight:1000; }
+.sa-road-stop-mark { display:grid; place-items:center; width:22px; height:22px; border-radius:8px; background:rgba(255,211,106,.14); }
+.sa-road-stop-art { position:relative; z-index:3; display:grid; place-items:center; width:64px; height:64px; flex:0 0 auto; margin:9px 0 7px; border:1px solid rgba(255,255,255,.24); border-radius:21px; color:#fff; font-size:27px; background:linear-gradient(145deg,#367e99,#245069); box-shadow:0 5px 0 rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.28); }
+.sa-road-stop-art.coins { color:#ffdc75; background:linear-gradient(145deg,#9b6e39,#684b39); }
+.sa-road-stop-art.power_points { color:#7fe8ec; background:linear-gradient(145deg,#347e91,#315f79); }
+.sa-road-stop-art.case { color:#e1c1ff; background:linear-gradient(145deg,#8055a2,#503d7d); }
+.sa-road-stop-art.hero { color:#ffdf82; background:linear-gradient(145deg,#bd754d,#7d4d56); }
+.sa-road-stop-reward { position:relative; z-index:3; min-height:31px; max-width:100%; display:flex; align-items:center; justify-content:center; color:#f3f8fa; font-size:11px; line-height:1.28; font-weight:900; text-wrap:balance; }
+.sa-road-featured-tag { position:relative; z-index:3; margin-top:3px; color:#d9c2ff; font-size:8px; letter-spacing:.8px; font-weight:1000; }
+.sa-road-stop.current .sa-road-featured-tag { color:#ffda7c; }
+.sa-road-claim { position:relative; z-index:4; display:flex; align-items:center; justify-content:center; gap:7px; width:100%; min-height:34px; margin-top:auto; padding:6px 9px; border:1px solid #9c5d3a; border-radius:11px; color:#382218; background:linear-gradient(180deg,#ffe08c,#ffad71); box-shadow:0 3px 0 #7e4936,inset 0 1px 0 rgba(255,255,255,.7); cursor:pointer; font:900 10px/1 system-ui,sans-serif; }
+.sa-road-claim span { font-size:15px; }
+.sa-road-status { position:relative; z-index:3; display:flex; align-items:center; justify-content:center; gap:4px; min-height:28px; margin-top:auto; color:#8aa4b1; font-size:9px; font-weight:900; }
+.sa-road-status.done { color:#7ce2bd; }
+.sa-road-status.locked small { color:#8ba5b5; font-size:8px; }
+.sa-road-link { position:absolute; z-index:2; display:block; pointer-events:none; background:linear-gradient(90deg,#3f9f9f,#64d6c6); box-shadow:0 0 9px rgba(89,214,195,.22); opacity:.72; }
+.sa-road-link.right { left:50%; top:50%; width:calc(100% + 16px); height:7px; transform:translateY(-50%); }
+.sa-road-link.left { right:50%; top:50%; width:calc(100% + 16px); height:7px; transform:translateY(-50%); }
+.sa-road-link.turn { left:50%; top:50%; width:7px; height:calc(100% + var(--road-row-gap)); transform:translateX(-50%); background:linear-gradient(180deg,#64d6c6,#3f9f9f); }
+.sa-road-stop.current .sa-road-link, .sa-road-stop.reached .sa-road-link { opacity:1; }
+
+@media (max-width: 980px) {
+  .sa-road-route { grid-template-columns:repeat(3,minmax(0,1fr)); grid-auto-rows:minmax(190px,auto); gap:20px 12px; }
+  .sa-road-stop { grid-column:auto !important; grid-row:auto !important; min-height:190px; }
+  .sa-road-link { display:none; }
+}
+@media (max-width: 620px) {
+  .sa-road-hero { align-items:flex-start; padding:17px 15px; min-height:0; }
+  .sa-road-hero p { max-width:100%; font-size:11px; }
+  .sa-road-total { position:absolute; right:12px; top:12px; gap:4px; padding:7px 9px; }
+  .sa-road-total>b { font-size:19px; }
+  .sa-road-total>small { font-size:8px; }
+  .sa-road-hero-copy { padding-right:104px; }
+  .sa-road-ready { position:static; align-self:flex-end; margin-left:auto; white-space:nowrap; }
+  .sa-road-progress-card { grid-template-columns:1fr 42px; gap:10px; padding:12px; }
+  .sa-road-progress-copy { grid-column:1; }
+  .sa-road-progress-meter { grid-column:1 / -1; grid-row:2; }
+  .sa-road-next-art { grid-column:2; grid-row:1; width:40px; height:40px; }
+  .sa-road-route { grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; padding:3px 0 22px; }
+  .sa-road-stop { min-height:177px; padding:9px 7px; border-radius:15px; }
+  .sa-road-stop-art { width:52px; height:52px; margin:7px 0 5px; border-radius:17px; }
+  .sa-road-stop-reward { font-size:10px; }
+  .sa-road-featured-tag { font-size:7px; }
+}
+@media (prefers-reduced-motion: reduce) { .sa-road-stop { transition:none; } }
+
 </style>
 </head>
 <body>
@@ -4060,7 +4327,7 @@ function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"f
       case_already_owned: 'ALREADY OWNED',
       case_converted_into: 'Converted into',
       case_tap_continue: 'TAP TO CONTINUE',
-      road_title: 'Trophy Road (0 – 1500)',
+      road_title: 'Trophy Road',
       road_subtitle: 'Earn trophies in any mode to unlock milestone rewards every 50 trophies!',
       season_title: 'Season 1: Star Vortex (8 Weeks)',
       season_subtitle: 'Free 30-Tier Track · Earn Star Tokens in every match!',
@@ -4324,7 +4591,7 @@ function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"f
       age_badge: '6+ · Без доната · Честная игра',
       nav_play: 'Арена',
       nav_heroes: 'Герои',
-      nav_road: 'Путь кубков',
+      nav_road: 'Путь славы',
       nav_season: 'Сезон',
       nav_quests: 'Задания',
       nav_social: 'Отряд и Топ',
@@ -4398,7 +4665,7 @@ function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"f
       case_already_owned: 'УЖЕ ЕСТЬ!',
       case_converted_into: 'Заменено на',
       case_tap_continue: 'ЖМИТЕ, ЧТОБЫ ПРОДОЛЖИТЬ',
-      road_title: 'Лестница кубков (0 – 1500)',
+      road_title: 'Путь славы',
       road_subtitle: 'Побеждай в режимах и забирай награды каждые 50 кубков!',
       season_title: 'Сезон 1: Звёздный Вихрь (8 недель)',
       season_subtitle: 'Бесплатный трек 30 уровней · Жетоны за каждый бой!',
@@ -4722,6 +4989,7 @@ function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"f
   const INTERSTITIAL_MIN_SESSION_MS = 120 * 1000; // 120s session guard
   const INTERSTITIAL_COOLDOWN_MS = 180 * 1000;    // 180s cooldown guard
   const FORBIDDEN_AD_SCENES = new Set(['match', 'case_anim', 'tutorial']);
+  const DEMO_REWARDED_DURATION_SECONDS = 30;
 
   function createPlatformAdapter(options = {}) {
     const nowFn = options.nowFn || (() => Date.now());
@@ -4867,7 +5135,7 @@ function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"f
         return Promise.resolve({ rewarded: true, via: 'demo_video_instant' });
       }
       if (typeof document === 'undefined') {
-        return Promise.resolve({ rewarded: true, via: 'demo_video_headless' });
+        return Promise.resolve({ rewarded: false, via: 'demo_video_unavailable', reason: 'no_document' });
       }
       return new Promise((resolve) => {
         const i18n = (root.SA && root.SA.i18n) || { t: (k) => k };
@@ -4881,48 +5149,49 @@ function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"f
               <div class="sa-demo-ad-orbit"></div>
               <div class="sa-demo-ad-star">★</div>
             </div>
-            <p class="sa-demo-ad-timer" id="saDemoAdTimer">${i18n.t('ad_demo_wait', { sec: 4 })}</p>
+            <p class="sa-demo-ad-timer" id="saDemoAdTimer">${i18n.t('ad_demo_wait', { sec: DEMO_REWARDED_DURATION_SECONDS })}</p>
             <div class="sa-demo-ad-bar"><div class="sa-demo-ad-bar-fill" id="saDemoAdFill"></div></div>
           </div>
         `;
         document.body.appendChild(overlay);
 
-        let remaining = 4;
+        let remaining = DEMO_REWARDED_DURATION_SECONDS;
+        let settled = false;
         const fill = overlay.querySelector('#saDemoAdFill');
         const timerEl = overlay.querySelector('#saDemoAdTimer');
         emitPause(true, 'rewarded_demo');
 
-        const stepMs = 1000;
         if (fill) {
-          requestAnimationFrame(() => {
-            fill.style.transition = 'width 4s linear';
-            fill.style.width = '100%';
-          });
+          fill.style.transition = 'width 1s linear';
+          fill.style.width = '0%';
         }
-
         const iv = setInterval(() => {
+          // A hidden tab is not considered watched time.
+          if (document.hidden || settled) return;
           remaining -= 1;
+          if (fill) fill.style.width = `${((DEMO_REWARDED_DURATION_SECONDS - remaining) / DEMO_REWARDED_DURATION_SECONDS) * 100}%`;
           if (remaining > 0) {
             if (timerEl) timerEl.textContent = i18n.t('ad_demo_wait', { sec: remaining });
           } else {
             clearInterval(iv);
             if (timerEl) timerEl.textContent = i18n.t('ad_demo_done');
             setTimeout(() => {
+              if (settled) return;
+              settled = true;
               overlay.remove();
               emitPause(false, 'rewarded_demo_end');
               resolve({ rewarded: true, via: 'demo_video' });
             }, 350);
           }
-        }, stepMs);
+        }, 1000);
       });
     }
 
     /**
      * Rewarded Ad:
-     * - Guarded against running inside match / case_anim / tutorial!
-     * - VK: CheckNativeAds -> ShowNativeAds({ad_format:'reward'}).
-     * - RULE 8: Grants reward even if error occurs AFTER show started!
-     * - Fallback: interactive Demo Video on web/adblock/region.
+     * - Guarded against running inside match / case_anim / tutorial.
+     * - A reward is granted only when the host explicitly confirms completion.
+     * - If the host has no ad fill/API, use the timed 30-second demo ad fallback.
      */
     async function showRewardedAd(placement = 'daily_case') {
       if (isAdBlockedByScene()) {
@@ -4947,37 +5216,32 @@ function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"f
               emitPause(true, 'vk_reward');
               const res = await vk.send('VKWebAppShowNativeAds', { ad_format: 'reward' });
               emitPause(false, 'vk_reward_end');
-              if (res && res.result) {
-                return { rewarded: true, via: 'vk_native' };
-              }
-              // Rule 8: even if post-show result is ambiguous after show started, honor reward
-              return { rewarded: true, via: 'vk_post_show_grace' };
+              return res && res.result
+                ? { rewarded: true, via: 'vk_native' }
+                : { rewarded: false, via: 'vk_native', reason: 'not_completed' };
             }
           } catch (err) {
-            emitPause(false, 'vk_reward_err');
+            emitPause(false, showStarted ? 'vk_reward_incomplete' : 'vk_reward_check_error');
             if (showStarted) {
-              // RULE 8: Reward granted even on error after show began!
-              return { rewarded: true, via: 'vk_error_after_show_grace', error: String(err) };
+              return { rewarded: false, via: 'vk_native', reason: 'ad_not_confirmed', error: String(err) };
             }
           }
-          // Adblock or no fill in region -> Demo video fallback
+          // Use the fallback only when no native ad could be started (no fill/API error).
           return showDemoRewardedOverlay();
         }
 
         const gp = getGamePush();
         if (gp && gp.ads && typeof gp.ads.showRewardedVideo === 'function') {
-          let gpStarted = false;
           try {
-            gpStarted = true;
             emitPause(true, 'gp_reward');
             const ok = await gp.ads.showRewardedVideo();
             emitPause(false, 'gp_reward_end');
-            if (ok) return { rewarded: true, via: 'gamepush' };
+            return ok
+              ? { rewarded: true, via: 'gamepush' }
+              : { rewarded: false, via: 'gamepush', reason: 'not_completed' };
           } catch (err) {
-            emitPause(false, 'gp_reward_err');
-            if (gpStarted) {
-              return { rewarded: true, via: 'gp_error_grace', error: String(err) };
-            }
+            emitPause(false, 'gp_reward_incomplete');
+            return { rewarded: false, via: 'gamepush', reason: 'ad_not_confirmed', error: String(err) };
           }
         }
 
@@ -14488,17 +14752,31 @@ function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"f
       `;
       document.body.appendChild(modal);
       const spinBtn = modal.querySelector('#saSpinWheelBtn');
+      const closeBtn = modal.querySelector('#saCloseWheelBtn');
+      const resetWheelButtons = () => {
+        adBusy = false;
+        if (modal.isConnected) {
+          if (spinBtn) { spinBtn.disabled = false; spinBtn.textContent = i18n.t('wheel_spin_btn'); }
+          if (closeBtn) closeBtn.disabled = false;
+        }
+      };
       if(spinBtn){
         spinBtn.onclick = async ()=>{
           if(adBusy) return;
           uiClickSfx();
-          adBusy=true; spinBtn.disabled=true; spinBtn.textContent=i18n.t('wheel_spinning');
+          adBusy=true;
+          spinBtn.disabled=true;
+          spinBtn.textContent=i18n.t('wheel_spinning');
+          if(closeBtn) closeBtn.disabled=true;
           try{
             const res = await platform.showRewardedAd('wheel_spin');
-            if(res && res.rewarded){
-              const wheelEl = document.getElementById('saWheelEl');
+            // Only a confirmed completed ad may start the wheel. Closing the modal during playback
+            // also invalidates this attempt, even if a host resolves late.
+            if(res && res.rewarded && modal.isConnected){
+              const wheelEl = modal.querySelector('#saWheelEl');
               if(wheelEl) wheelEl.classList.add('sa-wheel-spinning');
               setTimeout(()=>{
+                if (!modal.isConnected) { adBusy=false; return; }
                 const spinRes = SaveMod.spinWheel(save, gameData, Math.random);
                 onSaveChanged();
                 showToast(i18n.t('toast_wheel_won', {name: i18n.getLang()==='ru'?spinRes.reward.labelRu:spinRes.reward.labelEn}));
@@ -14509,12 +14787,17 @@ function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"f
                 renderAll();
                 adBusy=false;
               }, 3200);
-            } else { adBusy=false; spinBtn.disabled=false; spinBtn.textContent=i18n.t('wheel_spin_btn'); }
-          } catch(e){ adBusy=false; spinBtn.disabled=false; }
+            } else {
+              resetWheelButtons();
+            }
+          } catch(e){ resetWheelButtons(); }
         };
       }
-      const closeBtn = modal.querySelector('#saCloseWheelBtn');
-      if(closeBtn) closeBtn.onclick=()=>{ uiClickSfx(); modal.remove(); };
+      if(closeBtn) closeBtn.onclick=()=>{
+        if (adBusy) return;
+        uiClickSfx();
+        modal.remove();
+      };
     }
 
     function openShopModal() {
@@ -16348,35 +16631,90 @@ function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"f
     function renderRoadView(container) {
       disposeTurntable();
       const totalTrophies = SaveMod.getTotalTrophies(save);
+      const nodes = gameData.meta.trophyRoad || [];
+      const nextNode = nodes.find(n => totalTrophies < n.trophies) || null;
+      const previousNode = [...nodes].reverse().find(n => totalTrophies >= n.trophies) || null;
+      const previousTrophies = previousNode ? previousNode.trophies : 0;
+      const targetTrophies = nextNode ? nextNode.trophies : (nodes[nodes.length - 1] ? nodes[nodes.length - 1].trophies : 1500);
+      const progressPct = nextNode
+        ? Math.max(0, Math.min(100, Math.round(((totalTrophies - previousTrophies) / Math.max(1, targetTrophies - previousTrophies)) * 100)))
+        : 100;
+      const toNext = nextNode ? Math.max(0, nextNode.trophies - totalTrophies) : 0;
+      const claimableCount = nodes.filter(n => totalTrophies >= n.trophies && !save.claimedRoad.includes(n.trophies)).length;
+      const readyLabel = i18n.getLang() === 'ru'
+        ? `${claimableCount} ${claimableCount % 10 === 1 && claimableCount % 100 !== 11 ? 'НАГРАДА ЖДЁТ' : claimableCount % 10 >= 2 && claimableCount % 10 <= 4 && (claimableCount % 100 < 12 || claimableCount % 100 > 14) ? 'НАГРАДЫ ЖДУТ' : 'НАГРАД ЖДУТ'}`
+        : `${claimableCount} REWARDS READY`;
+      const getRewardIcon = (reward) => reward.type === 'hero' ? ico('star')
+        : reward.type === 'case' ? ico('case')
+        : reward.type === 'power_points' ? ico('bolt')
+        : ico('coin');
+      const trophyWord = i18n.getLang() === 'ru' ? 'КУБКОВ' : 'TROPHIES';
+      const nextLabel = i18n.getLang() === 'ru' ? 'СЛЕДУЮЩАЯ НАГРАДА' : 'NEXT REWARD';
+      const leftLabel = i18n.getLang() === 'ru' ? 'ДО РУБЕЖА' : 'TO NEXT MILESTONE';
+      const routeNodes = nodes.map((node, index) => {
+        const reached = totalTrophies >= node.trophies;
+        const claimed = save.claimedRoad.includes(node.trophies);
+        const isCurrent = nextNode === node;
+        const row = Math.floor(index / 5);
+        const pos = index % 5;
+        const col = row % 2 === 0 ? pos : 4 - pos;
+        const turnEnd = pos === 4 && index < nodes.length - 1;
+        const featured = node.reward.type === 'hero' || node.reward.type === 'case';
+        const link = index < nodes.length - 1
+          ? `<span class="sa-road-link ${turnEnd ? 'turn' : (row % 2 === 0 ? 'right' : 'left')}" aria-hidden="true"></span>`
+          : '';
+        const status = reached && !claimed
+          ? `<button type="button" class="sa-road-claim" data-claim-road="${node.trophies}">${i18n.t('btn_claim')}<span>＋</span></button>`
+          : claimed
+            ? `<span class="sa-road-status done">✓ ${i18n.t('btn_claimed')}</span>`
+            : `<span class="sa-road-status locked">${ico('lock')}<small>${toNext && isCurrent ? `${toNext} ${trophyWord}` : ''}</small></span>`;
+        return `
+          <article class="sa-road-stop ${reached ? 'reached' : ''} ${claimed ? 'claimed' : ''} ${isCurrent ? 'current' : ''} ${featured ? 'featured' : ''} ${turnEnd ? 'turn-end' : ''}"
+            style="--road-row:${row + 1};--road-col:${col + 1};--road-index:${index}">
+            ${link}
+            <div class="sa-road-stop-top"><span class="sa-road-stop-mark">${ico('trophy')}</span><b>${node.trophies}</b></div>
+            <div class="sa-road-stop-art ${node.reward.type}">${getRewardIcon(node.reward)}</div>
+            <div class="sa-road-stop-reward">${i18n.pick(node.reward, 'label')}</div>
+            ${featured ? `<span class="sa-road-featured-tag">${node.reward.type === 'hero' ? (i18n.getLang() === 'ru' ? 'НОВЫЙ БОЕЦ' : 'NEW FIGHTER') : (i18n.getLang() === 'ru' ? 'КЕЙС' : 'CASE')}</span>` : ''}
+            ${status}
+          </article>
+        `;
+      }).join('');
 
       container.innerHTML = `
-        <div class="sa-card">
-          <h2>${ico('trophy')} ${i18n.t('road_title')} — ${totalTrophies} / 1500</h2>
-          <p class="sa-muted">${i18n.t('road_subtitle')}</p>
-          <div class="sa-road-track">
-            ${gameData.meta.trophyRoad.map(node => {
-              const reached = totalTrophies >= node.trophies;
-              const claimed = save.claimedRoad.includes(node.trophies);
-              const rIco = node.reward.type === 'hero' ? ico('star') : (node.reward.type === 'case' ? ico('case') : (node.reward.type === 'power_points' ? ico('bolt') : ico('coin')));
-              return `
-                <div class="sa-road-node ${reached ? 'reached' : ''} ${claimed ? 'claimed' : ''}">
-                  <div class="sa-road-trophies">${ico('trophy')} ${node.trophies}</div>
-                  <div class="sa-road-ico">${rIco}</div>
-                  <div class="sa-road-lbl">${i18n.pick(node.reward, 'label')}</div>
-                  ${reached && !claimed
-                    ? `<button class="sa-btn sa-btn-gold sa-btn-sm" data-claim-road="${node.trophies}">${i18n.t('btn_claim')}</button>`
-                    : `<span class="sa-road-status">${claimed ? i18n.t('btn_claimed') : ico('lock')}</span>`}
-                </div>
-              `;
-            }).join('')}
-          </div>
-        </div>
+        <section class="sa-road-page">
+          <header class="sa-road-hero">
+            <div class="sa-road-hero-copy">
+              <div class="sa-road-eyebrow">✦ ${i18n.getLang() === 'ru' ? 'ТВОЙ ПУТЬ ПОБЕД' : 'YOUR VICTORY JOURNEY'}</div>
+              <h1>${i18n.t('road_title')}</h1>
+              <p>${i18n.t('road_subtitle')}</p>
+            </div>
+            <div class="sa-road-total"><span>${ico('trophy')}</span><b>${totalTrophies}</b><small>/ 1500 ${trophyWord}</small></div>
+            ${claimableCount ? `<div class="sa-road-ready">${ico('gift')} ${readyLabel}</div>` : ''}
+          </header>
+
+          <section class="sa-road-progress-card">
+            <div class="sa-road-progress-copy">
+              <span class="sa-road-progress-label">${nextNode ? nextLabel : (i18n.getLang() === 'ru' ? 'ПУТЬ ПРОЙДЕН' : 'ROAD COMPLETE')}</span>
+              <strong>${nextNode ? i18n.pick(nextNode.reward, 'label') : (i18n.getLang() === 'ru' ? 'Ты собрал все награды!' : 'All milestones reached!')}</strong>
+              <small>${nextNode ? `${leftLabel}: ${toNext}` : `${totalTrophies} / 1500`}</small>
+            </div>
+            <div class="sa-road-progress-meter">
+              <div class="sa-road-progress-track"><span style="width:${progressPct}%"></span></div>
+              <div class="sa-road-progress-ends"><span>${previousTrophies}</span><b>${nextNode ? nextNode.trophies : 1500}</b></div>
+            </div>
+            <div class="sa-road-next-art">${nextNode ? getRewardIcon(nextNode.reward) : ico('trophy')}</div>
+          </section>
+
+          <div class="sa-road-section-heading"><span>${i18n.getLang() === 'ru' ? 'РУБЕЖИ' : 'MILESTONES'}</span><i></i><small>${nodes.length} ${i18n.getLang() === 'ru' ? 'НАГРАД' : 'REWARDS'}</small></div>
+          <div class="sa-road-route ${nextNode ? '' : 'complete'}">${routeNodes}</div>
+        </section>
       `;
 
       container.querySelectorAll('[data-claim-road]').forEach(btn => {
         btn.onclick = () => {
           const tVal = Number(btn.getAttribute('data-claim-road'));
-          const node = gameData.meta.trophyRoad.find(n => n.trophies === tVal);
+          const node = nodes.find(n => n.trophies === tVal);
           if (!node || save.claimedRoad.includes(tVal) || totalTrophies < tVal) return;
           save.claimedRoad.push(tVal);
           grantRewardObject(node.reward, i18n.t('ledger_road', { t: tVal }));
@@ -18047,5 +18385,5 @@ function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"f
 })(typeof window !== 'undefined' ? window : globalThis);
 
 </script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5ce9e400e6b8069',t:'MTc5NTA4NTA1MA=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5ce9e400e6b8069',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5cec925df8a3291',t:'MTc5NTA4NjgwNw=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5cec925df8a3291',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
