@@ -61,10 +61,16 @@
       if (vk) {
         backend = 'vk';
         try {
-          // RULE 8: VKWebAppInit MUST be called FIRST!
-          await vk.send('VKWebAppInit', {});
+          // VKWebAppInit is started from the document head when possible, before assets load.
+          // Keep a bounded fallback here so an unresponsive bridge can never hold the game at the VK loader.
+          const initPromise = root.__SA_VK_INIT_PROMISE || vk.send('VKWebAppInit', {});
+          if (!root.__SA_VK_INIT_PROMISE) root.__SA_VK_INIT_PROMISE = initPromise;
+          await Promise.race([
+            Promise.resolve(initPromise),
+            new Promise(resolve => setTimeout(() => resolve({ timeout: true }), 1800))
+          ]);
         } catch (_) {
-          // Safe guard outside VK iframe
+          // Continue safely if bridge initialization fails outside the VK host.
         }
 
         if (typeof vk.subscribe === 'function') {

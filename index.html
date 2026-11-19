@@ -3,6 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <script>
+    // Initialize the VK bridge before loading the game's larger resources.
+    (function () {
+      var q = window.location.search || '';
+      var isVkLaunch = /[?&](vk_app_id|vk_is_widescreen|vk_language|vk_platform|vk_ref|vk_ts)=/.test(q);
+      try {
+        var host = window.location.hostname || '';
+        var refHost = document.referrer ? new URL(document.referrer).hostname : '';
+        isVkLaunch = isVkLaunch || /(^|\.)vk\.(com|ru)$/.test(host) || /(^|\.)vk\.(com|ru)$/.test(refHost);
+      } catch (_) {}
+      if (!window.vkBridge && !isVkLaunch) return;
+      if (!window.vkBridge) {
+        var subscribers = [], reqId = 0, pending = {};
+        window.addEventListener('message', function (ev) {
+          var d = ev && ev.data;
+          if (!d || typeof d !== 'object') return;
+          for (var i = 0; i < subscribers.length; i++) { try { subscribers[i]({ detail: d }); } catch (_) {} }
+          var rid = d.data && d.data.request_id;
+          if (rid && pending[rid]) {
+            var cb = pending[rid]; delete pending[rid];
+            if (d.type && d.type.indexOf('Failed') !== -1) cb.reject(d.data);
+            else cb.resolve(d.data || { result: true });
+          }
+        });
+        window.vkBridge = {
+          subscribe: function (fn) { subscribers.push(fn); },
+          send: function (handler, params) {
+            return new Promise(function (resolve, reject) {
+              var id = 'sa_' + (++reqId);
+              var payload = Object.assign({}, params || {}, { request_id: id });
+              pending[id] = { resolve: resolve, reject: reject };
+              setTimeout(function () { if (pending[id]) { delete pending[id]; resolve({ result: false, timeout: true }); } }, 2500);
+              try {
+                if (window.AndroidBridge && window.AndroidBridge[handler]) window.AndroidBridge[handler](JSON.stringify(payload));
+                else if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers[handler]) window.webkit.messageHandlers[handler].postMessage(payload);
+                else if (window.parent && window.parent !== window) window.parent.postMessage({ handler: handler, params: payload, type: 'vk-connect', webFrameId: '' }, '*');
+                else { delete pending[id]; resolve({ result: true }); }
+              } catch (e) { delete pending[id]; reject(e); }
+            });
+          }
+        };
+      }
+      if (!window.__SA_VK_INIT_PROMISE && window.vkBridge && typeof window.vkBridge.send === 'function') {
+        try { window.__SA_VK_INIT_PROMISE = window.vkBridge.send('VKWebAppInit', {}); }
+        catch (e) { window.__SA_VK_INIT_PROMISE = Promise.reject(e); }
+      }
+    })();
+  </script>
   <title>Звёздная Арена: Отряд</title>
   <link rel="stylesheet" href="./styles/main.css?v=20261118b" />
   <link rel="stylesheet" href="./styles/polish.css?v=20261118b" />
@@ -111,62 +159,6 @@
   <!-- Toast Notifications -->
   <div id="saToastContainer" class="sa-toast-container"></div>
 
-  <!-- Built-in Zero-CDN VK Bridge iframe shim (activates automatically when hosted inside VK Games) -->
-  <script>
-    (function () {
-      if (window.vkBridge) return;
-      var hasVkQuery = /[?&]vk_app_id=/.test(window.location.search);
-      if (!hasVkQuery) return;
-      var subscribers = [];
-      var reqId = 0;
-      var pending = {};
-      window.addEventListener('message', function (ev) {
-        var d = ev && ev.data;
-        if (!d || typeof d !== 'object') return;
-        for (var i = 0; i < subscribers.length; i++) {
-          try { subscribers[i]({ detail: d }); } catch (_) {}
-        }
-        var rid = d.data && d.data.request_id;
-        if (rid && pending[rid]) {
-          var cb = pending[rid];
-          delete pending[rid];
-          if (d.type && d.type.indexOf('Failed') !== -1) cb.reject(d.data);
-          else cb.resolve(d.data || { result: true });
-        }
-      });
-      window.vkBridge = {
-        subscribe: function (fn) { subscribers.push(fn); },
-        send: function (handler, params) {
-          return new Promise(function (resolve, reject) {
-            var id = 'sa_' + (++reqId);
-            var p = Object.assign({}, params || {}, { request_id: id });
-            pending[id] = { resolve: resolve, reject: reject };
-            setTimeout(function () {
-              if (pending[id]) {
-                delete pending[id];
-                resolve({ result: false, timeout: true });
-              }
-            }, 2500);
-            try {
-              if (window.AndroidBridge && window.AndroidBridge[handler]) {
-                window.AndroidBridge[handler](JSON.stringify(p));
-              } else if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers[handler]) {
-                window.webkit.messageHandlers[handler].postMessage(p);
-              } else if (window.parent && window.parent !== window) {
-                window.parent.postMessage({ handler: handler, params: p, type: 'vk-connect', webFrameId: '' }, '*');
-              } else {
-                delete pending[id];
-                resolve({ result: true });
-              }
-            } catch (e) {
-              delete pending[id];
-              reject(e);
-            }
-          });
-        }
-      };
-    })();
-  </script>
 
   <!-- Local Vendor Three.js (r160, ~166KB gz) -->
   <script src="./vendor/three.min.js"></script>
